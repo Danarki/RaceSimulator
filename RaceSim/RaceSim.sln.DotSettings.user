@@ -1,0 +1,19 @@
+﻿<wpf:ResourceDictionary xml:space="preserve" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml" xmlns:s="clr-namespace:System;assembly=mscorlib" xmlns:ss="urn:shemas-jetbrains-com:settings-storage-xaml" xmlns:wpf="http://schemas.microsoft.com/winfx/2006/xaml/presentation">
+	<s:String x:Key="/Default/Environment/Highlighting/HighlightingSourceSnapshotLocation/@EntryValue">C:\Users\Daan\AppData\Local\Temp\JetBrains\ReSharperPlatformVs17\vAny_6f24b706\CoverageData\_RaceSim.545844627\Snapshot\snapshot.utdcvr</s:String>
+	<s:String x:Key="/Default/Environment/UnitTesting/UnitTestSessionStore/Sessions/=1c734e21_002D2990_002D4937_002D80e4_002Da8c398a57345/@EntryIndexedValue">&lt;SessionState ContinuousTestingMode="0" Name="All tests from Solution #2" xmlns="urn:schemas-jetbrains-com:jetbrains-ut-session"&gt;&#xD;
+  &lt;Solution /&gt;&#xD;
+&lt;/SessionState&gt;</s:String>
+	<s:String x:Key="/Default/Environment/UnitTesting/UnitTestSessionStore/Sessions/=ad490695_002D47b5_002D48fd_002Db69f_002Dc425ea40f3e7/@EntryIndexedValue">&lt;SessionState ContinuousTestingMode="0" Name="Visualization_DetermineGraphic_Should" xmlns="urn:schemas-jetbrains-com:jetbrains-ut-session"&gt;&#xD;
+  &lt;TestAncestor&gt;&#xD;
+    &lt;TestId&gt;NUnit3x::EB7747B3-0C10-4FAB-B27C-A47DE426E7C2::net6.0::Controller_Test.Visualization_DetermineGraphic_Should&lt;/TestId&gt;&#xD;
+    &lt;TestId&gt;NUnit3x::EB7747B3-0C10-4FAB-B27C-A47DE426E7C2::net6.0::Controller_Test.Visualization_AddParticipantsToGraphic_Should&lt;/TestId&gt;&#xD;
+    &lt;TestId&gt;NUnit3x::EB7747B3-0C10-4FAB-B27C-A47DE426E7C2::net6.0::Controller_Test.Controller_Race_CreateRaceShould.Race_CreateRace_ReturnRace&lt;/TestId&gt;&#xD;
+  &lt;/TestAncestor&gt;&#xD;
+&lt;/SessionState&gt;</s:String>
+	<s:String x:Key="/Default/Environment/UnitTesting/UnitTestSessionStore/Sessions/=cc06dd3d_002D8ff3_002D491b_002Db5fa_002Df4c823a01040/@EntryIndexedValue">&lt;SessionState ContinuousTestingMode="0" Name="Visualization_GraphicFacingEastRight_ReturnStringArray" xmlns="urn:schemas-jetbrains-com:jetbrains-ut-session"&gt;&#xD;
+  &lt;Solution /&gt;&#xD;
+&lt;/SessionState&gt;</s:String>
+	
+	<s:String x:Key="/Default/Environment/UnitTesting/UnitTestSessionStore/Sessions/=ebbbba14_002Df979_002D4746_002D9369_002Db099630fa16b/@EntryIndexedValue">&lt;SessionState ContinuousTestingMode="0" IsActive="True" Name="All tests from Solution" xmlns="urn:schemas-jetbrains-com:jetbrains-ut-session"&gt;&#xD;
+  &lt;Solution /&gt;&#xD;
+&lt;/SessionState&gt;</s:String></wpf:ResourceDictionary>

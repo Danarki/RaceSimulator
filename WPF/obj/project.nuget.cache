@@ -1,0 +1,11 @@
+{
+  "version": 2,
+  "dgSpecHash": "8Pjc+yibUPIA7fvGIpxug7EGuwsizrL8A3c0tYJW2+qEfJ0/mSpH4aetammOyoQWu8FdBLWrg/eEUYIZCr+ImQ==",
+  "success": true,
+  "projectFilePath": "C:\\Users\\Daan\\OneDrive - Windesheim Office365\\Jaar 3\\C#\\Projects\\RaceSimulator\\WPF\\WPF.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\Daan\\.nuget\\packages\\microsoft.win32.systemevents\\6.0.0\\microsoft.win32.systemevents.6.0.0.nupkg.sha512",
+    "C:\\Users\\Daan\\.nuget\\packages\\system.drawing.common\\6.0.0\\system.drawing.common.6.0.0.nupkg.sha512"
+  ],
+  "logs": []
+}
