@@ -5,11 +5,22 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:WPF"
         mc:Ignorable="d"
-        Title="MainWindow" Height="450" Width="800">
+        Title="MainWindow" Height="500" Width="850">
+    
+    <Window.DataContext>
+        <local:DataContextClass/>
+    </Window.DataContext>
     <Grid Background="LightGreen">
-        <Grid.ColumnDefinitions>
-            <ColumnDefinition/>
-        </Grid.ColumnDefinitions>
-        <Image Height="450" Width="800"/>
+        <Image Height="450" Width="800" Name="ImageComponent" />
+        <DockPanel Dock="Top" Height="20" VerticalAlignment="Top" LastChildFill="False">
+            <Menu>
+                <MenuItem Header="Menu">
+                    <MenuItem Header="Item 1" Click="MenuItem_Open_Window1"/>
+                    <MenuItem Header="Item 2" Click="MenuItem_Open_Window2"/>
+                    <MenuItem Header="Afsluiten" Click="MenuItem_Exit_Click"/>
+                </MenuItem>
+            </Menu>
+        </DockPanel>
+        <Label x:Name="TrackName" Content="{Binding TrackName}" HorizontalAlignment="Right" VerticalAlignment="Top" FontSize="24" FontWeight="Bold" />
     </Grid>
 </Window>

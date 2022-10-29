@@ -9,42 +9,83 @@
 
   <ItemGroup>
     <None Remove="Images\Blue.png" />
+    <None Remove="Images\BlueEast.png" />
+    <None Remove="Images\BlueNorth.png" />
+    <None Remove="Images\BlueSouth.png" />
+    <None Remove="Images\BlueWest.png" />
     <None Remove="Images\Crashed.png" />
     <None Remove="Images\EastRightCorner.png" />
     <None Remove="Images\FinishHorizontal.png" />
     <None Remove="Images\FinishVertical.png" />
     <None Remove="Images\Gray.png" />
+    <None Remove="Images\GrayEast.png" />
+    <None Remove="Images\GrayNorth.png" />
+    <None Remove="Images\GraySouth.png" />
+    <None Remove="Images\GrayWest.png" />
     <None Remove="Images\Green.png" />
+    <None Remove="Images\GreenEast.png" />
+    <None Remove="Images\GreenNorth.png" />
+    <None Remove="Images\GreenSouth.png" />
+    <None Remove="Images\GreenWest.png" />
     <None Remove="Images\NorthRightCorner.png" />
     <None Remove="Images\Red.png" />
+    <None Remove="Images\RedEast.png" />
+    <None Remove="Images\RedNorth.png" />
+    <None Remove="Images\RedSouth.png" />
+    <None Remove="Images\RedWest.png" />
     <None Remove="Images\SouthRightCorner.png" />
     <None Remove="Images\StartGrid.png" />
     <None Remove="Images\StraightHorizontal.png" />
     <None Remove="Images\StraightVertical.png" />
-    <None Remove="Images\WestRight.png" />
+    <None Remove="Images\WestRightCorner.png" />
     <None Remove="Images\Yellow.png" />
+    <None Remove="Images\YellowEast.png" />
+    <None Remove="Images\YellowNorth.png" />
+    <None Remove="Images\YellowSouth.png" />
+    <None Remove="Images\YellowWest.png" />
   </ItemGroup>
 
   <ItemGroup>
-    <Content Include="Images\Blue.png" />
+    <Content Include="Images\BlueEast.png" />
+    <Content Include="Images\BlueNorth.png" />
+    <Content Include="Images\BlueSouth.png" />
+    <Content Include="Images\BlueWest.png" />
     <Content Include="Images\Crashed.png" />
     <Content Include="Images\EastRightCorner.png" />
     <Content Include="Images\FinishHorizontal.png" />
     <Content Include="Images\FinishVertical.png" />
-    <Content Include="Images\Gray.png" />
-    <Content Include="Images\Green.png" />
+    <Content Include="Images\GrayEast.png" />
+    <Content Include="Images\GrayNorth.png" />
+    <Content Include="Images\GraySouth.png" />
+    <Content Include="Images\GrayWest.png" />
+    <Content Include="Images\GreenEast.png" />
+    <Content Include="Images\GreenNorth.png" />
+    <Content Include="Images\GreenSouth.png" />
+    <Content Include="Images\GreenWest.png" />
     <Content Include="Images\NorthRightCorner.png" />
-    <Content Include="Images\Red.png" />
+    <Content Include="Images\RedEast.png" />
+    <Content Include="Images\RedNorth.png" />
+    <Content Include="Images\RedSouth.png" />
+    <Content Include="Images\RedWest.png" />
     <Content Include="Images\SouthRightCorner.png" />
     <Content Include="Images\StartGrid.png" />
     <Content Include="Images\StraightHorizontal.png" />
     <Content Include="Images\StraightVertical.png" />
-    <Content Include="Images\WestRight.png" />
-    <Content Include="Images\Yellow.png" />
+    <Content Include="Images\WestRightCorner.png" />
+    <Content Include="Images\YellowEast.png" />
+    <Content Include="Images\YellowNorth.png" />
+    <Content Include="Images\YellowSouth.png" />
+    <Content Include="Images\YellowWest.png" />
   </ItemGroup>
 
   <ItemGroup>
     <PackageReference Include="System.Drawing.Common" Version="6.0.0" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\Controller\Controller.csproj" />
+    <ProjectReference Include="..\Model\Model.csproj" />
+    <ProjectReference Include="..\RaceSim\RaceSim.csproj" />
   </ItemGroup>
 
 </Project>

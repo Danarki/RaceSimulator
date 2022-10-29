@@ -14,10 +14,18 @@ EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Controller", "..\Controller\Controller.csproj", "{D6FE1E9B-CB88-4CC7-987F-DA3006735746}"
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Controller Test", "..\Controller Test\Controller Test.csproj", "{EB7747B3-0C10-4FAB-B27C-A47DE426E7C2}"
+	ProjectSection(ProjectDependencies) = postProject
+		{B194A308-5776-4C91-8106-B9F061053F36} = {B194A308-5776-4C91-8106-B9F061053F36}
+	EndProjectSection
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "UnitTests", "..\UnitTests\UnitTests.csproj", "{9102A05F-56E9-459D-A9B7-93ADF68D4F56}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WPF", "..\WPF\WPF.csproj", "{B194A308-5776-4C91-8106-B9F061053F36}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "WPF", "..\WPF\WPF.csproj", "{B194A308-5776-4C91-8106-B9F061053F36}"
+	ProjectSection(ProjectDependencies) = postProject
+		{18E1E1AE-47C3-4672-A5E8-EB6B22A1CB92} = {18E1E1AE-47C3-4672-A5E8-EB6B22A1CB92}
+		{D6FE1E9B-CB88-4CC7-987F-DA3006735746} = {D6FE1E9B-CB88-4CC7-987F-DA3006735746}
+		{EA30CFE1-8F83-4E55-A5A4-CDD600C63525} = {EA30CFE1-8F83-4E55-A5A4-CDD600C63525}
+	EndProjectSection
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

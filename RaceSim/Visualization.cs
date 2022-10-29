@@ -43,6 +43,7 @@ namespace RaceSim
 
         public static void RaceChanged()
         {
+            Console.Clear();
             Initialize();
         }
 

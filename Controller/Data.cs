@@ -1,4 +1,5 @@
 ﻿using Model;
+using System.ComponentModel;
 
 namespace Controller
 {
@@ -6,7 +7,6 @@ namespace Controller
     {
         public static Competition Competition { get; set; }
         public static Race CurrentRace { get; set; }
-
         public static void Initialize()
         {
             Competition = new Competition();
@@ -50,8 +50,8 @@ namespace Controller
                     Equipment = new Car
                     {
                         Quality = 10,
-                        Performance = 3,
-                        Speed = 10,
+                        Performance = 10,
+                        Speed = 1,
                         IsBroken = false
                     },
                     Direction = Direction.East
@@ -64,8 +64,8 @@ namespace Controller
                     Equipment = new Car
                     {
                         Quality = 10,
-                        Performance = 3,
-                        Speed = 10,
+                        Performance = 10,
+                        Speed = 1,
                         IsBroken = false
                     },
                     Direction = Direction.East
@@ -78,7 +78,7 @@ namespace Controller
                 //    Equipment = new Car
                 //    {
                 //        Quality = 1,
-                //        Performance = 1,
+                //        Performance = 2,
                 //        Speed = 10,
                 //        IsBroken = false
                 //    },
@@ -101,38 +101,48 @@ namespace Controller
                 SectionTypes.RightCorner,
                 SectionTypes.Straight,
                 SectionTypes.Straight,
-                SectionTypes.Straight,
                 SectionTypes.RightCorner,
                 SectionTypes.RightCorner,
                 SectionTypes.Finish,
-                SectionTypes.Straight,
             };
 
-            Competition.Tracks.Enqueue(new Track("Super Track", sections));
+            SectionTypes[] quick =
+            {
+                SectionTypes.StartGrid,
+                SectionTypes.Straight,
+                SectionTypes.Finish,
+                SectionTypes.RightCorner,
+                SectionTypes.RightCorner,
+                SectionTypes.Straight,
+                SectionTypes.Straight,
+                SectionTypes.Straight,
+                SectionTypes.RightCorner,
+                SectionTypes.RightCorner,
+            };
 
-            //SectionTypes[] sections2 =
-            //{
-            //    SectionTypes.StartGrid,
-            //    SectionTypes.RightCorner,
-            //    SectionTypes.Straight,
-            //    SectionTypes.Straight,
-            //    SectionTypes.RightCorner,
-            //    SectionTypes.RightCorner,
-            //    SectionTypes.LeftCorner,
-            //    SectionTypes.LeftCorner,
-            //    SectionTypes.RightCorner,
-            //    SectionTypes.Straight,
-            //    SectionTypes.RightCorner,
-            //    SectionTypes.RightCorner,
-            //    SectionTypes.LeftCorner,
-            //    SectionTypes.LeftCorner,
-            //    SectionTypes.Straight,
-            //    SectionTypes.RightCorner,
-            //    SectionTypes.RightCorner,
-            //    SectionTypes.Straight,
-            //    SectionTypes.Finish,
-            //    SectionTypes.Straight,
-            //};
+            Competition.Tracks.Enqueue(new Track("Super Track", quick));
+            Competition.Tracks.Enqueue(new Track("Quick Track", quick));
+            //Competition.Tracks.Enqueue(new Track("Super Track", sections));
+
+            SectionTypes[] sections2 =
+            {
+                SectionTypes.StartGrid,
+                SectionTypes.RightCorner,
+                SectionTypes.Straight,
+                SectionTypes.Straight,
+                SectionTypes.RightCorner,
+                SectionTypes.Straight,
+                SectionTypes.Straight,
+                SectionTypes.Straight,
+                SectionTypes.RightCorner,
+                SectionTypes.RightCorner,
+                SectionTypes.LeftCorner,
+                SectionTypes.LeftCorner,
+                SectionTypes.RightCorner,
+                SectionTypes.RightCorner,
+                SectionTypes.Straight,
+                SectionTypes.Finish,
+            };
 
             //Competition.Tracks.Enqueue(new Track("Super Track2", sections2));
 
@@ -152,8 +162,7 @@ namespace Controller
                 SectionTypes.Straight,
             };
 
-            Competition.Tracks.Enqueue(new Track("Super Track3", sections3));
-
+            //Competition.Tracks.Enqueue(new Track("Super Track3", sections3));
         }
     }
 }

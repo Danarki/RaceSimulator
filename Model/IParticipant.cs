@@ -1,10 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
-namespace Model
+﻿namespace Model
 {
     public enum TeamColors { Red, Green, Yellow, Grey, Blue };
 
@@ -29,9 +23,10 @@ namespace Model
             if (sectionType == SectionTypes.RightCorner)
             {
                 nextDirection();
-            } else if (sectionType == SectionTypes.LeftCorner)
+            }
+            else if (sectionType == SectionTypes.LeftCorner)
             {
-                previousDirection();   
+                previousDirection();
             }
         }
 
@@ -61,7 +56,7 @@ namespace Model
 
         public int getSteps()
         {
-           return Equipment.Performance * Equipment.Speed / 10;
+            return Equipment.Performance * Equipment.Speed / 10;
         }
     }
 }
