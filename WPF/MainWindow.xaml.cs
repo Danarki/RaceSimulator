@@ -24,11 +24,8 @@ namespace WPF
     /// </summary>
     public partial class MainWindow : Window
     {
-        private Window1 _window1;
-        private Window2 _window2;
-
-        public event PropertyChangedEventHandler PropertyChanged;
-        public event EventHandler DriversEventHandler = delegate {};
+        private CompetitionWindow _competitionWindow;
+        private RaceWindow _raceWindow;
 
         public DataContextClass DataContextClass;
 
@@ -45,8 +42,6 @@ namespace WPF
             DataContextClass = new DataContextClass();
             DataContextClass.TrackName = Data.CurrentRace.Track.Name;
             this.DataContext = DataContextClass;
-
-            //DataContextClass = new DataContextClass("AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA");
 
             Data.CurrentRace.DriversChanged += OnDriversChanged;
             Data.CurrentRace.RaceChanged += OnRaceChanged;
@@ -81,34 +76,45 @@ namespace WPF
 
         private void OnRaceChanged()
         {
-            //Data.NextRace();
             DataContextClass.TrackName = Data.CurrentRace.Track.Name;
 
             WPFController.ClearCache();
-           WPFController.Initialize();
+            WPFController.Initialize();
+            
+            Track track = Data.CurrentRace.Track;
+            
+            Data.CurrentRace.DriversChanged += OnDriversChanged;
+            Data.CurrentRace.RaceChanged += OnRaceChanged;
+            Data.CurrentRace.RaceEnded += OnRaceEnded;
+            
+            if (track != null)
+            {
+                this.ImageComponent.Dispatcher.BeginInvoke(
+                    DispatcherPriority.Render,
+                    new Action(() =>
+                    {
+                        this.ImageComponent.Source = null;
+                        this.ImageComponent.Source = Visualization.DrawTrack(track);
+                    }));
+            }
 
-           Track track = Data.CurrentRace.Track;
-           
-           Data.CurrentRace.DriversChanged += OnDriversChanged;
-           Data.CurrentRace.RaceChanged += OnRaceChanged;
-           Data.CurrentRace.RaceEnded += OnRaceEnded;
+            if (_raceWindow != null)
+            {
+                this.Dispatcher.Invoke(() =>
+                {
+                    Data.CurrentRace.DriversChanged += ((RaceContextClass)_raceWindow.DataContext).OnDriversChanged;
+                });
+            }
 
-           if (track == null)
-           {
-               int a = 0;
-           }
-           else
-           {
-               this.ImageComponent.Dispatcher.BeginInvoke(
-                   DispatcherPriority.Render,
-                   new Action(() =>
-                   {
-                       this.ImageComponent.Source = null;
-                       this.ImageComponent.Source = Visualization.DrawTrack(track);
-                   }));
-           }
+            if (_competitionWindow != null)
+            {
+                this.Dispatcher.Invoke(() =>
+                {
+                    Data.CurrentRace.DriversChanged += ((CompetitionContextClass)_competitionWindow.DataContext).OnDriversChanged;
+                });
+            }
 
-           Data.CurrentRace.startTimer();
+            Data.CurrentRace.startTimer();
         }
 
         private void MenuItem_Exit_Click(object sender, RoutedEventArgs e)
@@ -116,18 +122,59 @@ namespace WPF
             Application.Current.Shutdown();
         }
 
-        private void MenuItem_Open_Window1(object sender, RoutedEventArgs e)
+        private void MenuItem_Open_CompetitionWindow(object sender, RoutedEventArgs e)
         {
-            _window1 = new Window1();
-            _window1.InitializeComponent();
-            _window1.Show();
+            if (_competitionWindow == null)
+            {
+
+                _competitionWindow = new CompetitionWindow();
+                _competitionWindow.InitializeComponent();
+                Data.CurrentRace.DriversChanged += ((CompetitionContextClass)_competitionWindow.DataContext).OnDriversChanged;
+                _competitionWindow.Show();
+            }
+            else
+            {
+                try
+                {
+                    _competitionWindow.WindowState = WindowState.Minimized;
+                    _competitionWindow.Show();
+                    _competitionWindow.WindowState = WindowState.Normal;
+                }
+                catch 
+                {
+                    _competitionWindow = new CompetitionWindow();
+                    _competitionWindow.InitializeComponent();
+                    Data.CurrentRace.DriversChanged += ((CompetitionContextClass)_competitionWindow.DataContext).OnDriversChanged;
+                    _competitionWindow.Show();
+                }
+            }
         }
 
-        private void MenuItem_Open_Window2(object sender, RoutedEventArgs e)
+        private void MenuItem_Open_RaceWindow(object sender, RoutedEventArgs e)
         {
-            _window2 = new Window2();
-            _window2.InitializeComponent();
-            _window2.Show();
+            if (_raceWindow == null)
+            {
+                _raceWindow = new RaceWindow();
+                _raceWindow.InitializeComponent();
+                Data.CurrentRace.DriversChanged += ((RaceContextClass)_raceWindow.DataContext).OnDriversChanged; 
+                _raceWindow.Show();
+            }
+            else
+            {
+                try
+                {
+                    _raceWindow.WindowState = WindowState.Minimized;
+                    _raceWindow.Show();
+                    _raceWindow.WindowState = WindowState.Normal;
+                }
+                catch
+                {
+                    _raceWindow = new RaceWindow();
+                    _raceWindow.InitializeComponent();
+                    Data.CurrentRace.DriversChanged += ((RaceContextClass)_raceWindow.DataContext).OnDriversChanged;
+                    _raceWindow.Show();
+                }
+            }
         }
     }
 }

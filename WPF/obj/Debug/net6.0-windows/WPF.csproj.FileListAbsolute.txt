@@ -32,8 +32,10 @@ C:\Users\Daan\OneDrive - Windesheim Office365\Jaar 3\C#\Projects\RaceSimulator\W
 C:\Users\Daan\OneDrive - Windesheim Office365\Jaar 3\C#\Projects\RaceSimulator\WPF\obj\Debug\net6.0-windows\WPF.pdb
 C:\Users\Daan\OneDrive - Windesheim Office365\Jaar 3\C#\Projects\RaceSimulator\WPF\obj\Debug\net6.0-windows\WPF.genruntimeconfig.cache
 C:\Users\Daan\OneDrive - Windesheim Office365\Jaar 3\C#\Projects\RaceSimulator\WPF\obj\Debug\net6.0-windows\ref\WPF.dll
-C:\Users\Daan\OneDrive - Windesheim Office365\Jaar 3\C#\Projects\RaceSimulator\WPF\obj\Debug\net6.0-windows\Window1.g.cs
-C:\Users\Daan\OneDrive - Windesheim Office365\Jaar 3\C#\Projects\RaceSimulator\WPF\obj\Debug\net6.0-windows\Window2.g.cs
-C:\Users\Daan\OneDrive - Windesheim Office365\Jaar 3\C#\Projects\RaceSimulator\WPF\obj\Debug\net6.0-windows\Window1.baml
-C:\Users\Daan\OneDrive - Windesheim Office365\Jaar 3\C#\Projects\RaceSimulator\WPF\obj\Debug\net6.0-windows\Window2.baml
 C:\Users\Daan\OneDrive - Windesheim Office365\Jaar 3\C#\Projects\RaceSimulator\WPF\obj\Debug\net6.0-windows\GeneratedInternalTypeHelper.g.cs
+C:\Users\Daan\OneDrive - Windesheim Office365\Jaar 3\C#\Projects\RaceSimulator\WPF\obj\Debug\net6.0-windows\CompetitionWindow.g.cs
+C:\Users\Daan\OneDrive - Windesheim Office365\Jaar 3\C#\Projects\RaceSimulator\WPF\obj\Debug\net6.0-windows\RaceWindow.g.cs
+C:\Users\Daan\OneDrive - Windesheim Office365\Jaar 3\C#\Projects\RaceSimulator\WPF\obj\Debug\net6.0-windows\CompetitionWindow.baml
+C:\Users\Daan\OneDrive - Windesheim Office365\Jaar 3\C#\Projects\RaceSimulator\WPF\obj\Debug\net6.0-windows\RaceWindow.baml
+C:\Users\Daan\OneDrive - Windesheim Office365\Jaar 3\C#\Projects\RaceSimulator\WPF\obj\Debug\net6.0-windows\Window1.g.cs
+C:\Users\Daan\OneDrive - Windesheim Office365\Jaar 3\C#\Projects\RaceSimulator\WPF\obj\Debug\net6.0-windows\Window1.baml

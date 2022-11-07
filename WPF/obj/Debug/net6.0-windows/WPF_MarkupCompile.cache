@@ -10,11 +10,11 @@ none
 false
 TRACE;DEBUG;NET;NET6_0;NETCOREAPP
 C:\Users\Daan\OneDrive - Windesheim Office365\Jaar 3\C#\Projects\RaceSimulator\WPF\App.xaml
-31130175450
+4-1443456704
 30-1184719401
-8217154707
+101398536683
 200596600323
-MainWindow.xaml;Window1.xaml;Window2.xaml;
+CompetitionWindow.xaml;MainWindow.xaml;RaceWindow.xaml;Window1.xaml;
 
 False
 

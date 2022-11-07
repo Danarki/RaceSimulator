@@ -121,8 +121,8 @@ namespace Controller
             };
 
             Competition.Tracks.Enqueue(new Track("Super Track", quick));
-            Competition.Tracks.Enqueue(new Track("Quick Track", quick));
-            //Competition.Tracks.Enqueue(new Track("Super Track", sections));
+            //Competition.Tracks.Enqueue(new Track("Quick Track", quick));
+            Competition.Tracks.Enqueue(new Track("Super Track 222", sections));
 
             SectionTypes[] sections2 =
             {
@@ -144,7 +144,7 @@ namespace Controller
                 SectionTypes.Finish,
             };
 
-            //Competition.Tracks.Enqueue(new Track("Super Track2", sections2));
+            Competition.Tracks.Enqueue(new Track("Super Track2", sections2));
 
             SectionTypes[] sections3 =
             {

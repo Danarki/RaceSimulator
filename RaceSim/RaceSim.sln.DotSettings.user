@@ -1,7 +1,56 @@
 ﻿<wpf:ResourceDictionary xml:space="preserve" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml" xmlns:s="clr-namespace:System;assembly=mscorlib" xmlns:ss="urn:shemas-jetbrains-com:settings-storage-xaml" xmlns:wpf="http://schemas.microsoft.com/winfx/2006/xaml/presentation">
 	<s:String x:Key="/Default/Environment/Highlighting/HighlightingSourceSnapshotLocation/@EntryValue">C:\Users\Daan\AppData\Local\Temp\JetBrains\ReSharperPlatformVs17\vAny_6f24b706\CoverageData\_RaceSim.545844627\Snapshot\snapshot.utdcvr</s:String>
+	<s:String x:Key="/Default/Environment/UnitTesting/UnitTestSessionStore/Sessions/=0aa21810_002D56fb_002D4301_002D892c_002Da013683abdee/@EntryIndexedValue">&lt;SessionState ContinuousTestingMode="0" IsActive="True" Name="Visualization_DetermineCornerCoordinates_ShouldReturnIntArray" xmlns="urn:schemas-jetbrains-com:jetbrains-ut-session"&gt;&#xD;
+  &lt;Solution /&gt;&#xD;
+&lt;/SessionState&gt;</s:String>
 	<s:String x:Key="/Default/Environment/UnitTesting/UnitTestSessionStore/Sessions/=1c734e21_002D2990_002D4937_002D80e4_002Da8c398a57345/@EntryIndexedValue">&lt;SessionState ContinuousTestingMode="0" Name="All tests from Solution #2" xmlns="urn:schemas-jetbrains-com:jetbrains-ut-session"&gt;&#xD;
   &lt;Solution /&gt;&#xD;
+&lt;/SessionState&gt;</s:String>
+	<s:String x:Key="/Default/Environment/UnitTesting/UnitTestSessionStore/Sessions/=1fb55a83_002Dbb51_002D4499_002D9798_002D3c137b94cf31/@EntryIndexedValue">&lt;SessionState ContinuousTestingMode="0" Name="Controller_Data_NextTrackShouldReturnNull" xmlns="urn:schemas-jetbrains-com:jetbrains-ut-session"&gt;&#xD;
+  &lt;TestAncestor&gt;&#xD;
+    &lt;TestId&gt;NUnit3x::EB7747B3-0C10-4FAB-B27C-A47DE426E7C2::net6.0::Controller_Test.Controller_Data_NextTrackShould.Controller_Data_NextTrackShouldReturnNull&lt;/TestId&gt;&#xD;
+  &lt;/TestAncestor&gt;&#xD;
+&lt;/SessionState&gt;</s:String>
+	<s:String x:Key="/Default/Environment/UnitTesting/UnitTestSessionStore/Sessions/=29d49c2c_002Dcfac_002D42f8_002D908a_002D8663f49d5c0c/@EntryIndexedValue">&lt;SessionState ContinuousTestingMode="0" Name="Controller_Data_NextTrackShouldReturnNull #2" xmlns="urn:schemas-jetbrains-com:jetbrains-ut-session"&gt;&#xD;
+  &lt;TestAncestor&gt;&#xD;
+    &lt;TestId&gt;NUnit3x::EB7747B3-0C10-4FAB-B27C-A47DE426E7C2::net6.0::Controller_Test.Controller_Data_NextTrackShould.Controller_Data_NextTrackUntilEmptyShouldReturnNull&lt;/TestId&gt;&#xD;
+    &lt;TestId&gt;NUnit3x::EB7747B3-0C10-4FAB-B27C-A47DE426E7C2::net6.0::Controller_Test.Controller_Race_MoveDriverShould.Controller_Race_PointsRemainingShouldReturnIntArray&lt;/TestId&gt;&#xD;
+    &lt;TestId&gt;NUnit3x::EB7747B3-0C10-4FAB-B27C-A47DE426E7C2::net6.0::Controller_Test.Controller_Race_MoveDriverShould.Controller_Race_PointsRemainingAfterNewShouldReturnIntArray&lt;/TestId&gt;&#xD;
+    &lt;TestId&gt;NUnit3x::EB7747B3-0C10-4FAB-B27C-A47DE426E7C2::net6.0::Controller_Test.Controller_Race_MoveDriverShould.Controller_Race_ParticipantsShouldReturnParticipants&lt;/TestId&gt;&#xD;
+    &lt;TestId&gt;NUnit3x::EB7747B3-0C10-4FAB-B27C-A47DE426E7C2::net6.0::Controller_Test.Controller_Race_GetSectionDataShould.Controller_Data_Shoulda&lt;/TestId&gt;&#xD;
+  &lt;/TestAncestor&gt;&#xD;
+&lt;/SessionState&gt;</s:String>
+	<s:String x:Key="/Default/Environment/UnitTesting/UnitTestSessionStore/Sessions/=2f25cd3b_002D9ac4_002D4a4d_002D8734_002D806ebb799810/@EntryIndexedValue">&lt;SessionState ContinuousTestingMode="0" Name="Controller_Data_Shoulda" xmlns="urn:schemas-jetbrains-com:jetbrains-ut-session"&gt;&#xD;
+  &lt;TestAncestor&gt;&#xD;
+    &lt;TestId&gt;NUnit3x::EB7747B3-0C10-4FAB-B27C-A47DE426E7C2::net6.0::Controller_Test.Controller_Race_GetSectionDataShould.Controller_Race_NewRaceGetSectionDataShouldReturnNull&lt;/TestId&gt;&#xD;
+    &lt;TestId&gt;NUnit3x::EB7747B3-0C10-4FAB-B27C-A47DE426E7C2::net6.0::Controller_Test.Controller_Race_GetSectionDataShould.Controller_Race_NewRaceGetFaultySectionDataShouldReturnNull&lt;/TestId&gt;&#xD;
+  &lt;/TestAncestor&gt;&#xD;
+&lt;/SessionState&gt;</s:String>
+	<s:String x:Key="/Default/Environment/UnitTesting/UnitTestSessionStore/Sessions/=4c2ceba0_002D0525_002D4c81_002D9378_002D9c12ce21af09/@EntryIndexedValue">&lt;SessionState ContinuousTestingMode="0" Name="Visualization_OneParticipantToStraightWest_ReturnStringArray #4" xmlns="urn:schemas-jetbrains-com:jetbrains-ut-session"&gt;&#xD;
+  &lt;TestAncestor&gt;&#xD;
+    &lt;TestId&gt;NUnit3x::EB7747B3-0C10-4FAB-B27C-A47DE426E7C2::net6.0::Controller_Test.Visualization_AddParticipantsToGraphic_Should.Visualization_OneParticipantToStraightWest_ReturnStringArray&lt;/TestId&gt;&#xD;
+    &lt;TestId&gt;NUnit3x::EB7747B3-0C10-4FAB-B27C-A47DE426E7C2::net6.0::Controller_Test.Visualization_AddParticipantsToGraphic_Should.Visualization_TwoParticipantToStraightWest_ReturnStringArray&lt;/TestId&gt;&#xD;
+    &lt;TestId&gt;NUnit3x::EB7747B3-0C10-4FAB-B27C-A47DE426E7C2::net6.0::Controller_Test.Visualization_DetermineGraphic_Should.Visualization_GraphicFacingWestRight_ReturnStringArray&lt;/TestId&gt;&#xD;
+    &lt;TestId&gt;NUnit3x::EB7747B3-0C10-4FAB-B27C-A47DE426E7C2::net6.0::Controller_Test.Visualization_DetermineGraphic_Should&lt;/TestId&gt;&#xD;
+    &lt;TestId&gt;NUnit3x::EB7747B3-0C10-4FAB-B27C-A47DE426E7C2::net6.0::Controller_Test.Visualization_AddParticipantsToGraphic_Should&lt;/TestId&gt;&#xD;
+    &lt;TestId&gt;NUnit3x::EB7747B3-0C10-4FAB-B27C-A47DE426E7C2::net6.0::Controller_Test.Visualization_DetermineCornerCoordinates_Should.Visualization_DetermineCornerCoordinates_ShouldReturnIntArray&lt;/TestId&gt;&#xD;
+  &lt;/TestAncestor&gt;&#xD;
+&lt;/SessionState&gt;</s:String>
+	<s:String x:Key="/Default/Environment/UnitTesting/UnitTestSessionStore/Sessions/=75cd5c68_002D64b8_002D4be9_002D92ae_002Dfb7839d40c37/@EntryIndexedValue">&lt;SessionState ContinuousTestingMode="0" Name="Controller" xmlns="urn:schemas-jetbrains-com:jetbrains-ut-session"&gt;&#xD;
+  &lt;TestAncestor&gt;&#xD;
+    &lt;TestId&gt;NUnit3x::EB7747B3-0C10-4FAB-B27C-A47DE426E7C2::net6.0::Controller_Test.Controller_Data_NextTrackShould.Controller&lt;/TestId&gt;&#xD;
+  &lt;/TestAncestor&gt;&#xD;
+&lt;/SessionState&gt;</s:String>
+	<s:String x:Key="/Default/Environment/UnitTesting/UnitTestSessionStore/Sessions/=7b50b2a1_002D2896_002D4d32_002Db01a_002Dc02fef34e7f9/@EntryIndexedValue">&lt;SessionState ContinuousTestingMode="0" Name="Controller_Race_OnTimedEventShouldUpdateDrivers #2" xmlns="urn:schemas-jetbrains-com:jetbrains-ut-session"&gt;&#xD;
+  &lt;TestAncestor&gt;&#xD;
+    &lt;TestId&gt;NUnit3x::EB7747B3-0C10-4FAB-B27C-A47DE426E7C2::net6.0::Controller_Test.Controller_Race_OnTimedEvent_Should.Controller_Race_OnTimedEventShouldUpdateDrivers&lt;/TestId&gt;&#xD;
+    &lt;TestId&gt;NUnit3x::EB7747B3-0C10-4FAB-B27C-A47DE426E7C2::net6.0::Controller_Test.Visualization_AddParticipantsToGraphic_Should.Visualization_TwoParticipants_ReturnStringArray&lt;/TestId&gt;&#xD;
+  &lt;/TestAncestor&gt;&#xD;
+&lt;/SessionState&gt;</s:String>
+	<s:String x:Key="/Default/Environment/UnitTesting/UnitTestSessionStore/Sessions/=9de9e132_002D3dc2_002D4d2f_002D9e46_002Daa9c0232d99c/@EntryIndexedValue">&lt;SessionState ContinuousTestingMode="0" Name="Controller_Race_OnTimedEventShouldUpdateDrivers" xmlns="urn:schemas-jetbrains-com:jetbrains-ut-session"&gt;&#xD;
+  &lt;TestAncestor&gt;&#xD;
+    &lt;TestId&gt;NUnit3x::EB7747B3-0C10-4FAB-B27C-A47DE426E7C2::net6.0::Controller_Test.Controller_Race_OnTimedEvent_Should.Controller_Race_OnTimedEventShouldUpdateDrivers&lt;/TestId&gt;&#xD;
+  &lt;/TestAncestor&gt;&#xD;
 &lt;/SessionState&gt;</s:String>
 	<s:String x:Key="/Default/Environment/UnitTesting/UnitTestSessionStore/Sessions/=ad490695_002D47b5_002D48fd_002Db69f_002Dc425ea40f3e7/@EntryIndexedValue">&lt;SessionState ContinuousTestingMode="0" Name="Visualization_DetermineGraphic_Should" xmlns="urn:schemas-jetbrains-com:jetbrains-ut-session"&gt;&#xD;
   &lt;TestAncestor&gt;&#xD;
@@ -10,10 +59,48 @@
     &lt;TestId&gt;NUnit3x::EB7747B3-0C10-4FAB-B27C-A47DE426E7C2::net6.0::Controller_Test.Controller_Race_CreateRaceShould.Race_CreateRace_ReturnRace&lt;/TestId&gt;&#xD;
   &lt;/TestAncestor&gt;&#xD;
 &lt;/SessionState&gt;</s:String>
+	<s:String x:Key="/Default/Environment/UnitTesting/UnitTestSessionStore/Sessions/=b80c0f47_002D83d7_002D47a1_002Da73c_002D07543d963737/@EntryIndexedValue">&lt;SessionState ContinuousTestingMode="0" Name="Controller_Race_NewRaceGetFaultySectionDataShouldReturnNewSectionData" xmlns="urn:schemas-jetbrains-com:jetbrains-ut-session"&gt;&#xD;
+  &lt;TestAncestor&gt;&#xD;
+    &lt;TestId&gt;NUnit3x::EB7747B3-0C10-4FAB-B27C-A47DE426E7C2::net6.0::Controller_Test.Controller_Race_GetSectionDataShould.Controller_Race_NewRaceGetFaultySectionDataShouldReturnNewSectionData&lt;/TestId&gt;&#xD;
+    &lt;TestId&gt;NUnit3x::EB7747B3-0C10-4FAB-B27C-A47DE426E7C2::net6.0::Controller_Test.Controller_Race_NewRaceShould&lt;/TestId&gt;&#xD;
+    &lt;TestId&gt;NUnit3x::EB7747B3-0C10-4FAB-B27C-A47DE426E7C2::net6.0::Controller_Test.Controller_Race_OnTimedEvent_Should.Controller_Race_OnTimedEventShouldUpdateDrivers&lt;/TestId&gt;&#xD;
+  &lt;/TestAncestor&gt;&#xD;
+&lt;/SessionState&gt;</s:String>
+	<s:String x:Key="/Default/Environment/UnitTesting/UnitTestSessionStore/Sessions/=bb71409b_002Db2b1_002D4518_002D8bd8_002Dd05c6edf178e/@EntryIndexedValue">&lt;SessionState ContinuousTestingMode="0" Name="Controller_Race_ParticipantsShouldReturnParticipants" xmlns="urn:schemas-jetbrains-com:jetbrains-ut-session"&gt;&#xD;
+  &lt;TestAncestor&gt;&#xD;
+    &lt;TestId&gt;NUnit3x::EB7747B3-0C10-4FAB-B27C-A47DE426E7C2::net6.0::Controller_Test.Controller_Race_MoveDriverShould.Controller_Race_ParticipantsShouldReturnParticipants&lt;/TestId&gt;&#xD;
+  &lt;/TestAncestor&gt;&#xD;
+&lt;/SessionState&gt;</s:String>
+	<s:String x:Key="/Default/Environment/UnitTesting/UnitTestSessionStore/Sessions/=c0cf1721_002Dce4f_002D4935_002Db0c4_002Df4f8b612a295/@EntryIndexedValue">&lt;SessionState ContinuousTestingMode="0" Name="Visualization_OneParticipantToStraightWest_ReturnStringArray #2" xmlns="urn:schemas-jetbrains-com:jetbrains-ut-session"&gt;&#xD;
+  &lt;TestAncestor&gt;&#xD;
+    &lt;TestId&gt;NUnit3x::EB7747B3-0C10-4FAB-B27C-A47DE426E7C2::net6.0::Controller_Test.Visualization_AddParticipantsToGraphic_Should.Visualization_OneParticipantToStraightWest_ReturnStringArray&lt;/TestId&gt;&#xD;
+  &lt;/TestAncestor&gt;&#xD;
+&lt;/SessionState&gt;</s:String>
 	<s:String x:Key="/Default/Environment/UnitTesting/UnitTestSessionStore/Sessions/=cc06dd3d_002D8ff3_002D491b_002Db5fa_002Df4c823a01040/@EntryIndexedValue">&lt;SessionState ContinuousTestingMode="0" Name="Visualization_GraphicFacingEastRight_ReturnStringArray" xmlns="urn:schemas-jetbrains-com:jetbrains-ut-session"&gt;&#xD;
   &lt;Solution /&gt;&#xD;
 &lt;/SessionState&gt;</s:String>
+	<s:String x:Key="/Default/Environment/UnitTesting/UnitTestSessionStore/Sessions/=ea15e5ed_002Dfb78_002D4db7_002Db766_002D3aa9002fa8b1/@EntryIndexedValue">&lt;SessionState ContinuousTestingMode="0" Name="Visualization_OneParticipantToStraightWest_ReturnStringArray #3" xmlns="urn:schemas-jetbrains-com:jetbrains-ut-session"&gt;&#xD;
+  &lt;TestAncestor&gt;&#xD;
+    &lt;TestId&gt;NUnit3x::EB7747B3-0C10-4FAB-B27C-A47DE426E7C2::net6.0::Controller_Test.Visualization_AddParticipantsToGraphic_Should.Visualization_OneParticipantToStraightWest_ReturnStringArray&lt;/TestId&gt;&#xD;
+  &lt;/TestAncestor&gt;&#xD;
+&lt;/SessionState&gt;</s:String>
 	
-	<s:String x:Key="/Default/Environment/UnitTesting/UnitTestSessionStore/Sessions/=ebbbba14_002Df979_002D4746_002D9369_002Db099630fa16b/@EntryIndexedValue">&lt;SessionState ContinuousTestingMode="0" IsActive="True" Name="All tests from Solution" xmlns="urn:schemas-jetbrains-com:jetbrains-ut-session"&gt;&#xD;
+	<s:String x:Key="/Default/Environment/UnitTesting/UnitTestSessionStore/Sessions/=ebbbba14_002Df979_002D4746_002D9369_002Db099630fa16b/@EntryIndexedValue">&lt;SessionState ContinuousTestingMode="0" Name="All tests from Solution" xmlns="urn:schemas-jetbrains-com:jetbrains-ut-session"&gt;&#xD;
   &lt;Solution /&gt;&#xD;
+&lt;/SessionState&gt;</s:String>
+	<s:String x:Key="/Default/Environment/UnitTesting/UnitTestSessionStore/Sessions/=f19dde8f_002D2b84_002D4d0b_002Db186_002D5224f69eb157/@EntryIndexedValue">&lt;SessionState ContinuousTestingMode="0" Name="Visualization_TwoParticipants_ReturnStringArray #2" xmlns="urn:schemas-jetbrains-com:jetbrains-ut-session"&gt;&#xD;
+  &lt;TestAncestor&gt;&#xD;
+    &lt;TestId&gt;NUnit3x::EB7747B3-0C10-4FAB-B27C-A47DE426E7C2::net6.0::Controller_Test.Visualization_AddParticipantsToGraphic_Should.Visualization_OneParticipantToStartEast_ReturnStringArray&lt;/TestId&gt;&#xD;
+    &lt;TestId&gt;NUnit3x::EB7747B3-0C10-4FAB-B27C-A47DE426E7C2::net6.0::Controller_Test.Visualization_AddParticipantsToGraphic_Should.Visualization_OneParticipantToStraightWest_ReturnStringArray&lt;/TestId&gt;&#xD;
+  &lt;/TestAncestor&gt;&#xD;
+&lt;/SessionState&gt;</s:String>
+	<s:String x:Key="/Default/Environment/UnitTesting/UnitTestSessionStore/Sessions/=f27734b2_002D325f_002D408c_002D8557_002Db63a152eb57b/@EntryIndexedValue">&lt;SessionState ContinuousTestingMode="0" Name="Visualization_OneParticipantToStraightWest_ReturnStringArray" xmlns="urn:schemas-jetbrains-com:jetbrains-ut-session"&gt;&#xD;
+  &lt;TestAncestor&gt;&#xD;
+    &lt;TestId&gt;NUnit3x::EB7747B3-0C10-4FAB-B27C-A47DE426E7C2::net6.0::Controller_Test.Visualization_AddParticipantsToGraphic_Should.Visualization_OneParticipantToStraightWest_ReturnStringArray&lt;/TestId&gt;&#xD;
+  &lt;/TestAncestor&gt;&#xD;
+&lt;/SessionState&gt;</s:String>
+	<s:String x:Key="/Default/Environment/UnitTesting/UnitTestSessionStore/Sessions/=fd3ed151_002Dce1f_002D4603_002D962b_002Da61c2b000902/@EntryIndexedValue">&lt;SessionState ContinuousTestingMode="0" Name="Visualization_TwoParticipants_ReturnStringArray" xmlns="urn:schemas-jetbrains-com:jetbrains-ut-session"&gt;&#xD;
+  &lt;TestAncestor&gt;&#xD;
+    &lt;TestId&gt;NUnit3x::EB7747B3-0C10-4FAB-B27C-A47DE426E7C2::net6.0::Controller_Test.Visualization_AddParticipantsToGraphic_Should.Visualization_TwoParticipants_ReturnStringArray&lt;/TestId&gt;&#xD;
+  &lt;/TestAncestor&gt;&#xD;
 &lt;/SessionState&gt;</s:String></wpf:ResourceDictionary>

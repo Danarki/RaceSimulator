@@ -15,8 +15,8 @@
         <DockPanel Dock="Top" Height="20" VerticalAlignment="Top" LastChildFill="False">
             <Menu>
                 <MenuItem Header="Menu">
-                    <MenuItem Header="Item 1" Click="MenuItem_Open_Window1"/>
-                    <MenuItem Header="Item 2" Click="MenuItem_Open_Window2"/>
+                    <MenuItem Header="Competitie Data" Click="MenuItem_Open_CompetitionWindow"/>
+                    <MenuItem Header="Race Data" Click="MenuItem_Open_RaceWindow"/>
                     <MenuItem Header="Afsluiten" Click="MenuItem_Exit_Click"/>
                 </MenuItem>
             </Menu>

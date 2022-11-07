@@ -9,6 +9,7 @@ using System.Threading.Tasks;
 using System.Windows.Input;
 using System.Windows.Media;
 using System.Windows.Media.Imaging;
+using Controller;
 using Color = System.Drawing.Color;
 using Model;
 
@@ -22,6 +23,16 @@ namespace WPF
         public static void Initialize()
         {
             bitmapDictionary = new Dictionary<string, Bitmap>();
+
+            if (Data.CurrentRace != null)
+            {
+                foreach (IParticipant participant in Data.CurrentRace.Participants)
+                {
+                    participant.Equipment.Quality = 10;
+                    participant.Equipment.IsBroken = false;
+                    participant.Direction = Direction.East;
+                }
+            }
         }
 
         public static Bitmap GetEmptyBitmap(int width, int height)

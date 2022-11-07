@@ -20,7 +20,7 @@ namespace Controller
         public event DriversChangedDelegate DriversChanged;
         public event RaceChangedDelegate RaceChanged;
         public event RaceEndedDelegate RaceEnded;
-        //TODO Race end event maken + Track name data binding
+        //TODO Race end event maken
 
         public Track Track;
         public List<IParticipant> Participants;
@@ -30,7 +30,8 @@ namespace Controller
         private Dictionary<Section, SectionData> _positions;
         private Timer timer;
         public Dictionary<IParticipant, Tuple<int, bool>> _rounds;
-        public int maxRounds = 1;
+        public int maxRounds = 3;
+        public int[] _pointsRemaining = new int[3];
 
         public void startTimer()
         {
@@ -63,12 +64,16 @@ namespace Controller
             Track = track;
             Participants = participants;
 
+            StartTime = DateTime.Now;
+
             _random = new Random(DateTime.Now.Millisecond);
             _randomBoundaries[0] = 0;
             _randomBoundaries[1] = 10;
 
             _positions = new Dictionary<Section, SectionData>();
             _rounds = new Dictionary<IParticipant, Tuple<int, bool>>();
+
+            _pointsRemaining = new int[3] { 7, 5, 3 };
 
             PlaceParticipantsOnTrack(Track, Participants);
 
@@ -80,13 +85,23 @@ namespace Controller
 
         public void removeDriverFromPositions(IParticipant participant, Section section, bool isLeft)
         {
+            int points = 1;
+
+            if (_pointsRemaining.Length > 0)
+            {
+                points = _pointsRemaining[0];
+                _pointsRemaining = _pointsRemaining.Skip(1).ToArray();
+            }
+
             if (isLeft)
             {
+                participant.Points += points;
                 _positions[section].Left = null;
                 _positions[section].DistanceLeft = 0;
             }
             else
             {
+                participant.Points += points;
                 _positions[section].Right = null;
                 _positions[section].DistanceRight = 0;
             }
@@ -96,7 +111,6 @@ namespace Controller
         {
             timer.Stop();
 
-            bool flag = false;
             bool setLeft = false;
             bool setRight = false;
 
@@ -113,7 +127,7 @@ namespace Controller
 
                 if (identifier.Next(_randomBoundaries[0], _randomBoundaries[1]) == _random.Next(_randomBoundaries[0], _randomBoundaries[1]))
                 {
-                    //participant.Equipment.IsBroken = true;
+                    participant.Equipment.IsBroken = true;
                     participant.Equipment.Quality--;
                 }
             }
@@ -130,34 +144,43 @@ namespace Controller
                     {
                         driversLeft = true;
 
-                        if (sectionData.Left.Equipment.IsBroken)
+                        if (sectionData.Left.Equipment.Quality <= 0)
                         {
-                            Random identifier = new Random(DateTime.Now.Millisecond);
-                            int identifierInt = identifier.Next(_randomBoundaries[0] / 2, _randomBoundaries[1] / 2) +
-                                                sectionData.Left.Equipment.Quality;
-                            if (identifierInt > _random.Next(_randomBoundaries[0], _randomBoundaries[1] * 2))
-                            {
-                                sectionData.Left.Equipment.IsBroken = false;
-                            }
+                            sectionData.Left = null;
                         }
-
-
-                        if (!sectionData.Left.Equipment.IsBroken)
+                        else
                         {
-                            var steps = sectionData.Left.getSteps();
-                            var position = sectionData.DistanceLeft + steps;
-
-                            if (position <= 6)
+                            if (sectionData.Left.Equipment.IsBroken)
                             {
-                                _positions[section].DistanceLeft = position;
+                                Random identifier = new Random(DateTime.Now.Millisecond);
+                                int identifierInt =
+                                    identifier.Next(_randomBoundaries[0] / 2, _randomBoundaries[1] / 2) +
+                                    sectionData.Left.Equipment.Quality;
+
+                                if (identifierInt > _random.Next(_randomBoundaries[0], _randomBoundaries[1] * 2))
+                                {
+                                    sectionData.Left.Equipment.IsBroken = false;
+                                }
                             }
-                            else
+
+
+                            if (!sectionData.Left.Equipment.IsBroken)
                             {
-                                _positions[section].DistanceLeft = position;
+                                var steps = sectionData.Left.getSteps();
+                                var position = sectionData.DistanceLeft + steps;
 
-                                newLeft = position - 7;
+                                if (position <= 6)
+                                {
+                                    _positions[section].DistanceLeft = position;
+                                }
+                                else
+                                {
+                                    _positions[section].DistanceLeft = position;
 
-                                updateDrivers = true;
+                                    newLeft = position - 7;
+
+                                    updateDrivers = true;
+                                }
                             }
                         }
                     }
@@ -174,34 +197,42 @@ namespace Controller
                     {
                         driversLeft = true;
 
-                        if (sectionData.Right.Equipment.IsBroken)
+                        if (sectionData.Right.Equipment.Quality <= 0)
                         {
-                            Random identifier = new Random(DateTime.Now.Millisecond);
-                            int identifierInt = identifier.Next(_randomBoundaries[0] / 2, _randomBoundaries[1] / 2) +
-                                                sectionData.Right.Equipment.Quality;
-                            if (identifierInt > _random.Next(_randomBoundaries[0], _randomBoundaries[1]))
-                            {
-                                sectionData.Right.Equipment.IsBroken = false;
-                            }
+                            sectionData.Right = null;
                         }
-
-
-                        if (!sectionData.Right.Equipment.IsBroken)
+                        else
                         {
-                            var steps = sectionData.Right.getSteps();
-                            var position = sectionData.DistanceRight + steps;
-
-                            if (position <= 6)
+                            if (sectionData.Right.Equipment.IsBroken)
                             {
-                                _positions[section].DistanceRight = position;
+                                Random identifier = new Random(DateTime.Now.Millisecond);
+                                int identifierInt =
+                                    identifier.Next(_randomBoundaries[0] / 2, _randomBoundaries[1] / 2) +
+                                    sectionData.Right.Equipment.Quality;
+                                if (identifierInt > _random.Next(_randomBoundaries[0], _randomBoundaries[1]))
+                                {
+                                    sectionData.Right.Equipment.IsBroken = false;
+                                }
                             }
-                            else
+
+
+                            if (!sectionData.Right.Equipment.IsBroken)
                             {
-                                _positions[section].DistanceRight = position;
+                                var steps = sectionData.Right.getSteps();
+                                var position = sectionData.DistanceRight + steps;
 
-                                newRight = position - 7;
+                                if (position <= 6)
+                                {
+                                    _positions[section].DistanceRight = position;
+                                }
+                                else
+                                {
+                                    _positions[section].DistanceRight = position;
 
-                                updateDrivers = true;
+                                    newRight = position - 7;
+
+                                    updateDrivers = true;
+                                }
                             }
                         }
                     }

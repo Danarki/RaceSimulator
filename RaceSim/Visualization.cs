@@ -113,7 +113,7 @@ namespace RaceSim
 
                 if (sectionType == SectionTypes.RightCorner)
                 {
-                    int[] i = DetermineRightCornerCoordinates(participant1, index, true);
+                    int[] i = DetermineRightCornerCoordinates(participant1.Direction, index, true);
 
                     index = i[0];
                     resultIndex = i[1];
@@ -121,7 +121,7 @@ namespace RaceSim
 
                 if (sectionType == SectionTypes.LeftCorner)
                 {
-                    int[] i = DetermineLeftCornerCoordinates(participant1, index, true);
+                    int[] i = DetermineLeftCornerCoordinates(participant1.Direction, index, true);
 
                     index = i[0];
                     resultIndex = i[1];
@@ -209,7 +209,7 @@ namespace RaceSim
 
                 if (sectionType == SectionTypes.RightCorner)
                 {
-                    int[] i = DetermineRightCornerCoordinates(participant2, index, false);
+                    int[] i = DetermineRightCornerCoordinates(participant2.Direction, index, false);
 
                     index = i[0];
                     resultIndex = i[1];
@@ -217,7 +217,7 @@ namespace RaceSim
 
                 if (sectionType == SectionTypes.LeftCorner)
                 {
-                    int[] i = DetermineLeftCornerCoordinates(participant2, index, false);
+                    int[] i = DetermineLeftCornerCoordinates(participant2.Direction, index, false);
 
                     index = i[0];
                     resultIndex = i[1];
@@ -306,7 +306,7 @@ namespace RaceSim
             }
         }
 
-        public static int[] DetermineLeftCornerCoordinates(IParticipant participant, int distance, bool isLeft)
+        public static int[] DetermineLeftCornerCoordinates(Direction direction, int distance, bool isLeft)
         {
             int index = distance;
 
@@ -323,7 +323,7 @@ namespace RaceSim
 
             if (isLeft)
             {
-                if (participant.Direction == Model.Direction.North)
+                if (direction == Model.Direction.North)
                 {
                     switch (index)
                     {
@@ -355,7 +355,7 @@ namespace RaceSim
                             resultIndex = 4;
                             break;
                     }
-                } else if (participant.Direction == Model.Direction.South)
+                } else if (direction == Model.Direction.South)
                 {
                     switch (index)
                     {
@@ -389,7 +389,7 @@ namespace RaceSim
                             break;
                     }
                 }
-                else if (participant.Direction == Model.Direction.West)
+                else if (direction == Model.Direction.West)
                 {
                     switch (index)
                     {
@@ -423,7 +423,7 @@ namespace RaceSim
                             break;
                     }
                 }
-                else if (participant.Direction == Model.Direction.East)
+                else if (direction == Model.Direction.East)
                 {
                     switch (index)
                     {
@@ -453,7 +453,7 @@ namespace RaceSim
             }
             else
             {
-                if (participant.Direction == Model.Direction.East)
+                if (direction == Model.Direction.East)
                 {
                     resultIndex = 4;
                     switch (index)
@@ -478,7 +478,7 @@ namespace RaceSim
                             break;
                     }
                 }
-                else if (participant.Direction == Model.Direction.North)
+                else if (direction == Model.Direction.North)
                 {
                     switch (index)
                     {
@@ -512,7 +512,7 @@ namespace RaceSim
                             break;
                     }
                 }
-                else if (participant.Direction == Model.Direction.West)
+                else if (direction == Model.Direction.West)
                 {
                     switch (index)
                     {
@@ -546,7 +546,7 @@ namespace RaceSim
                             break;
                     }
                 }
-                else if (participant.Direction == Model.Direction.South)
+                else if (direction == Model.Direction.South)
                 {
                     switch (index)
                     {
@@ -587,7 +587,7 @@ namespace RaceSim
 
         }
 
-        public static int[] DetermineRightCornerCoordinates(IParticipant participant, int distance, bool isLeft)
+        public static int[] DetermineRightCornerCoordinates(Direction direction, int distance, bool isLeft)
         {
             int index = distance;
 
@@ -603,7 +603,7 @@ namespace RaceSim
 
             if (isLeft)
             {
-                if (participant.Direction == Model.Direction.East)
+                if (direction == Model.Direction.East)
                 {
                     switch (index)
                     {
@@ -627,7 +627,7 @@ namespace RaceSim
                             break;
                     }
                 }
-                else if (participant.Direction == Model.Direction.West)
+                else if (direction == Model.Direction.West)
                 {
                     index = (index - 6) * -1;
                     switch (index)
@@ -661,7 +661,7 @@ namespace RaceSim
                             break;
                     }
                 }
-                else if (participant.Direction == Model.Direction.South)
+                else if (direction == Model.Direction.South)
                 {
                     switch (index)
                     {
@@ -695,7 +695,7 @@ namespace RaceSim
                             break;
                     }
                 }
-                else if (participant.Direction == Model.Direction.North)
+                else if (direction == Model.Direction.North)
                 {
                     switch (index)
                     {
@@ -731,7 +731,7 @@ namespace RaceSim
             }
             else
             {
-                if (participant.Direction == Model.Direction.West)
+                if (direction == Model.Direction.West)
                 {
                     switch (index)
                     {
@@ -765,7 +765,7 @@ namespace RaceSim
                             break;
                     }
                 }
-                else if (participant.Direction == Model.Direction.South)
+                else if (direction == Model.Direction.South)
                 {
                     switch (index)
                     {
@@ -799,7 +799,7 @@ namespace RaceSim
                             break;
                     }
                 }
-                else if (participant.Direction == Model.Direction.East)
+                else if (direction == Model.Direction.East)
                 {
                     switch (index)
                     {
@@ -833,7 +833,7 @@ namespace RaceSim
                             break;
                     }
                 }
-                else if (participant.Direction == Model.Direction.North)
+                else if (direction == Model.Direction.North)
                 {
                     switch (index)
                     {
