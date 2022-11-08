@@ -178,7 +178,7 @@ namespace WPF
             return _participantCrashed;
         }
 
-        public static string GetFilename(SectionTypes sectionType, Direction direction)
+        public static string GetSectionFilename(SectionTypes sectionType, Direction direction)
         {
             if (sectionType == SectionTypes.StartGrid)
             {

@@ -1,0 +1,360 @@
+{
+  "format": 1,
+  "restore": {
+    "C:\\Users\\Daan\\Downloads\\w\\RaceSimulator\\WPF Tests\\WPF Tests.csproj": {}
+  },
+  "projects": {
+    "C:\\Users\\Daan\\Downloads\\w\\RaceSimulator\\Controller\\Controller.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\Daan\\Downloads\\w\\RaceSimulator\\Controller\\Controller.csproj",
+        "projectName": "Controller",
+        "projectPath": "C:\\Users\\Daan\\Downloads\\w\\RaceSimulator\\Controller\\Controller.csproj",
+        "packagesPath": "C:\\Users\\Daan\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Daan\\Downloads\\w\\RaceSimulator\\Controller\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\Daan\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net6.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net6.0": {
+            "targetAlias": "net6.0",
+            "projectReferences": {
+              "C:\\Users\\Daan\\Downloads\\w\\RaceSimulator\\Model\\Model.csproj": {
+                "projectPath": "C:\\Users\\Daan\\Downloads\\w\\RaceSimulator\\Model\\Model.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net6.0": {
+          "targetAlias": "net6.0",
+          "dependencies": {
+            "MSTest.TestFramework": {
+              "target": "Package",
+              "version": "[2.2.7, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.400\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "C:\\Users\\Daan\\Downloads\\w\\RaceSimulator\\Model\\Model.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\Daan\\Downloads\\w\\RaceSimulator\\Model\\Model.csproj",
+        "projectName": "Model",
+        "projectPath": "C:\\Users\\Daan\\Downloads\\w\\RaceSimulator\\Model\\Model.csproj",
+        "packagesPath": "C:\\Users\\Daan\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Daan\\Downloads\\w\\RaceSimulator\\Model\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\Daan\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net6.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net6.0": {
+            "targetAlias": "net6.0",
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net6.0": {
+          "targetAlias": "net6.0",
+          "dependencies": {
+            "MSTest.TestFramework": {
+              "target": "Package",
+              "version": "[2.2.7, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.400\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "C:\\Users\\Daan\\Downloads\\w\\RaceSimulator\\RaceSim\\RaceSim.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\Daan\\Downloads\\w\\RaceSimulator\\RaceSim\\RaceSim.csproj",
+        "projectName": "RaceSim",
+        "projectPath": "C:\\Users\\Daan\\Downloads\\w\\RaceSimulator\\RaceSim\\RaceSim.csproj",
+        "packagesPath": "C:\\Users\\Daan\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Daan\\Downloads\\w\\RaceSimulator\\RaceSim\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\Daan\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net6.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net6.0": {
+            "targetAlias": "net6.0",
+            "projectReferences": {
+              "C:\\Users\\Daan\\Downloads\\w\\RaceSimulator\\Controller\\Controller.csproj": {
+                "projectPath": "C:\\Users\\Daan\\Downloads\\w\\RaceSimulator\\Controller\\Controller.csproj"
+              },
+              "C:\\Users\\Daan\\Downloads\\w\\RaceSimulator\\Model\\Model.csproj": {
+                "projectPath": "C:\\Users\\Daan\\Downloads\\w\\RaceSimulator\\Model\\Model.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net6.0": {
+          "targetAlias": "net6.0",
+          "dependencies": {
+            "MSTest.TestFramework": {
+              "target": "Package",
+              "version": "[2.2.7, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.400\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "C:\\Users\\Daan\\Downloads\\w\\RaceSimulator\\WPF Tests\\WPF Tests.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\Daan\\Downloads\\w\\RaceSimulator\\WPF Tests\\WPF Tests.csproj",
+        "projectName": "WPF Tests",
+        "projectPath": "C:\\Users\\Daan\\Downloads\\w\\RaceSimulator\\WPF Tests\\WPF Tests.csproj",
+        "packagesPath": "C:\\Users\\Daan\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Daan\\Downloads\\w\\RaceSimulator\\WPF Tests\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\Daan\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net6.0-windows"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net6.0-windows7.0": {
+            "targetAlias": "net6.0-windows",
+            "projectReferences": {
+              "C:\\Users\\Daan\\Downloads\\w\\RaceSimulator\\Model\\Model.csproj": {
+                "projectPath": "C:\\Users\\Daan\\Downloads\\w\\RaceSimulator\\Model\\Model.csproj"
+              },
+              "C:\\Users\\Daan\\Downloads\\w\\RaceSimulator\\WPF\\WPF.csproj": {
+                "projectPath": "C:\\Users\\Daan\\Downloads\\w\\RaceSimulator\\WPF\\WPF.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net6.0-windows7.0": {
+          "targetAlias": "net6.0-windows",
+          "dependencies": {
+            "Microsoft.NET.Test.Sdk": {
+              "target": "Package",
+              "version": "[17.1.0, )"
+            },
+            "NUnit": {
+              "target": "Package",
+              "version": "[3.13.3, )"
+            },
+            "NUnit.Analyzers": {
+              "target": "Package",
+              "version": "[3.3.0, )"
+            },
+            "NUnit3TestAdapter": {
+              "target": "Package",
+              "version": "[4.2.1, )"
+            },
+            "coverlet.collector": {
+              "target": "Package",
+              "version": "[3.1.2, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.400\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "C:\\Users\\Daan\\Downloads\\w\\RaceSimulator\\WPF\\WPF.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\Daan\\Downloads\\w\\RaceSimulator\\WPF\\WPF.csproj",
+        "projectName": "WPF",
+        "projectPath": "C:\\Users\\Daan\\Downloads\\w\\RaceSimulator\\WPF\\WPF.csproj",
+        "packagesPath": "C:\\Users\\Daan\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Daan\\Downloads\\w\\RaceSimulator\\WPF\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\Daan\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net6.0-windows"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net6.0-windows7.0": {
+            "targetAlias": "net6.0-windows",
+            "projectReferences": {
+              "C:\\Users\\Daan\\Downloads\\w\\RaceSimulator\\Controller\\Controller.csproj": {
+                "projectPath": "C:\\Users\\Daan\\Downloads\\w\\RaceSimulator\\Controller\\Controller.csproj"
+              },
+              "C:\\Users\\Daan\\Downloads\\w\\RaceSimulator\\Model\\Model.csproj": {
+                "projectPath": "C:\\Users\\Daan\\Downloads\\w\\RaceSimulator\\Model\\Model.csproj"
+              },
+              "C:\\Users\\Daan\\Downloads\\w\\RaceSimulator\\RaceSim\\RaceSim.csproj": {
+                "projectPath": "C:\\Users\\Daan\\Downloads\\w\\RaceSimulator\\RaceSim\\RaceSim.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net6.0-windows7.0": {
+          "targetAlias": "net6.0-windows",
+          "dependencies": {
+            "System.Drawing.Common": {
+              "target": "Package",
+              "version": "[6.0.0, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            },
+            "Microsoft.WindowsDesktop.App.WPF": {
+              "privateAssets": "none"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.400\\RuntimeIdentifierGraph.json"
+        }
+      }
+    }
+  }
+}

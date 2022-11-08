@@ -20,3 +20,25 @@ C:\Users\Daan\OneDrive - Windesheim Office365\Jaar 3\C#\Projects\RaceSimulator\R
 C:\Users\Daan\OneDrive - Windesheim Office365\Jaar 3\C#\Projects\RaceSimulator\RaceSim\obj\Debug\net6.0\ref\RaceSim.dll
 C:\Users\Daan\OneDrive - Windesheim Office365\Jaar 3\C#\Projects\RaceSimulator\RaceSim\bin\Debug\net6.0\Microsoft.VisualStudio.TestPlatform.TestFramework.Extensions.dll
 C:\Users\Daan\OneDrive - Windesheim Office365\Jaar 3\C#\Projects\RaceSimulator\RaceSim\bin\Debug\net6.0\Microsoft.VisualStudio.TestPlatform.TestFramework.dll
+C:\Users\Daan\Downloads\w\RaceSimulator\RaceSim\bin\Debug\net6.0\RaceSim.exe
+C:\Users\Daan\Downloads\w\RaceSimulator\RaceSim\bin\Debug\net6.0\RaceSim.deps.json
+C:\Users\Daan\Downloads\w\RaceSimulator\RaceSim\bin\Debug\net6.0\RaceSim.runtimeconfig.json
+C:\Users\Daan\Downloads\w\RaceSimulator\RaceSim\bin\Debug\net6.0\RaceSim.dll
+C:\Users\Daan\Downloads\w\RaceSimulator\RaceSim\bin\Debug\net6.0\RaceSim.pdb
+C:\Users\Daan\Downloads\w\RaceSimulator\RaceSim\bin\Debug\net6.0\Microsoft.VisualStudio.TestPlatform.TestFramework.Extensions.dll
+C:\Users\Daan\Downloads\w\RaceSimulator\RaceSim\bin\Debug\net6.0\Microsoft.VisualStudio.TestPlatform.TestFramework.dll
+C:\Users\Daan\Downloads\w\RaceSimulator\RaceSim\bin\Debug\net6.0\Controller.dll
+C:\Users\Daan\Downloads\w\RaceSimulator\RaceSim\bin\Debug\net6.0\Model.dll
+C:\Users\Daan\Downloads\w\RaceSimulator\RaceSim\bin\Debug\net6.0\Controller.pdb
+C:\Users\Daan\Downloads\w\RaceSimulator\RaceSim\bin\Debug\net6.0\Model.pdb
+C:\Users\Daan\Downloads\w\RaceSimulator\RaceSim\obj\Debug\net6.0\RaceSim.csproj.AssemblyReference.cache
+C:\Users\Daan\Downloads\w\RaceSimulator\RaceSim\obj\Debug\net6.0\RaceSim.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Daan\Downloads\w\RaceSimulator\RaceSim\obj\Debug\net6.0\RaceSim.AssemblyInfoInputs.cache
+C:\Users\Daan\Downloads\w\RaceSimulator\RaceSim\obj\Debug\net6.0\RaceSim.AssemblyInfo.cs
+C:\Users\Daan\Downloads\w\RaceSimulator\RaceSim\obj\Debug\net6.0\RaceSim.csproj.CoreCompileInputs.cache
+C:\Users\Daan\Downloads\w\RaceSimulator\RaceSim\obj\Debug\net6.0\RaceSim.csproj.CopyComplete
+C:\Users\Daan\Downloads\w\RaceSimulator\RaceSim\obj\Debug\net6.0\RaceSim.dll
+C:\Users\Daan\Downloads\w\RaceSimulator\RaceSim\obj\Debug\net6.0\refint\RaceSim.dll
+C:\Users\Daan\Downloads\w\RaceSimulator\RaceSim\obj\Debug\net6.0\RaceSim.pdb
+C:\Users\Daan\Downloads\w\RaceSimulator\RaceSim\obj\Debug\net6.0\RaceSim.genruntimeconfig.cache
+C:\Users\Daan\Downloads\w\RaceSimulator\RaceSim\obj\Debug\net6.0\ref\RaceSim.dll

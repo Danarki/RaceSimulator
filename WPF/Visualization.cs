@@ -97,11 +97,11 @@ namespace WPF
                 int[] a = null;
                 if (isLeft)
                 {
-                    a = DetermineLeftCornerCoordinates(sectionData.Left, dis, isLeft);
+                    a = DetermineLeftCornerCoordinates(sectionData.Left.Direction, dis, isLeft);
                 }
                 else
                 {
-                    a = DetermineLeftCornerCoordinates(sectionData.Right, dis, isLeft);
+                    a = DetermineLeftCornerCoordinates(sectionData.Right.Direction, dis, isLeft);
                 }
 
                 list.Add(a[0] * blockWidthAndHeigth);
@@ -113,11 +113,11 @@ namespace WPF
                 int[] a = null;
                 if (isLeft)
                 {
-                    a = DetermineRightCornerCoordinates(sectionData.Left, dis, isLeft);
+                    a = DetermineRightCornerCoordinates(sectionData.Left.Direction, dis, isLeft);
                 }
                 else
                 {
-                    a = DetermineRightCornerCoordinates(sectionData.Right, dis, isLeft);
+                    a = DetermineRightCornerCoordinates(sectionData.Right.Direction, dis, isLeft);
                 }
 
                 list.Add(a[0] * blockWidthAndHeigth);
@@ -127,7 +127,7 @@ namespace WPF
             return list;
         }
 
-        public static int[] DetermineLeftCornerCoordinates(IParticipant participant, int distance, bool isLeft)
+        public static int[] DetermineLeftCornerCoordinates(Direction direction, int distance, bool isLeft)
         {
             int xPosition = distance;
 
@@ -144,7 +144,7 @@ namespace WPF
 
             if (isLeft)
             {
-                if (participant.Direction == Model.Direction.North)
+                if (direction == Model.Direction.North)
                 {
                     switch (xPosition)
                     {
@@ -177,7 +177,7 @@ namespace WPF
                             break;
                     }
                 }
-                else if (participant.Direction == Model.Direction.South)
+                else if (direction == Model.Direction.South)
                 {
                     switch (xPosition)
                     {
@@ -211,7 +211,7 @@ namespace WPF
                             break;
                     }
                 }
-                else if (participant.Direction == Model.Direction.West)
+                else if (direction == Model.Direction.West)
                 {
                     switch (xPosition)
                     {
@@ -245,7 +245,7 @@ namespace WPF
                             break;
                     }
                 }
-                else if (participant.Direction == Model.Direction.East)
+                else if (direction == Model.Direction.East)
                 {
                     switch (xPosition)
                     {
@@ -275,7 +275,7 @@ namespace WPF
             }
             else
             {
-                if (participant.Direction == Model.Direction.East)
+                if (direction == Model.Direction.East)
                 {
                     yPosition = 4;
                     switch (xPosition)
@@ -300,7 +300,7 @@ namespace WPF
                             break;
                     }
                 }
-                else if (participant.Direction == Model.Direction.North)
+                else if (direction == Model.Direction.North)
                 {
                     switch (xPosition)
                     {
@@ -334,7 +334,7 @@ namespace WPF
                             break;
                     }
                 }
-                else if (participant.Direction == Model.Direction.West)
+                else if (direction == Model.Direction.West)
                 {
                     switch (xPosition)
                     {
@@ -368,7 +368,7 @@ namespace WPF
                             break;
                     }
                 }
-                else if (participant.Direction == Model.Direction.South)
+                else if (direction == Model.Direction.South)
                 {
                     switch (xPosition)
                     {
@@ -409,7 +409,7 @@ namespace WPF
 
         }
 
-        public static int[] DetermineRightCornerCoordinates(IParticipant participant, int distance, bool isLeft)
+        public static int[] DetermineRightCornerCoordinates(Direction direction, int distance, bool isLeft)
         {
             int xPosition = distance;
 
@@ -426,7 +426,7 @@ namespace WPF
 
             if (isLeft)
             {
-                if (participant.Direction == Model.Direction.East)
+                if (direction == Model.Direction.East)
                 {
                     switch (xPosition)
                     {
@@ -450,7 +450,7 @@ namespace WPF
                             break;
                     }
                 }
-                else if (participant.Direction == Model.Direction.West)
+                else if (direction == Model.Direction.West)
                 {
                     xPosition = (xPosition - 6) * -1;
                     switch (xPosition)
@@ -484,7 +484,7 @@ namespace WPF
                             break;
                     }
                 }
-                else if (participant.Direction == Model.Direction.South)
+                else if (direction == Model.Direction.South)
                 {
                     switch (xPosition)
                     {
@@ -518,7 +518,7 @@ namespace WPF
                             break;
                     }
                 }
-                else if (participant.Direction == Model.Direction.North)
+                else if (direction == Model.Direction.North)
                 {
                     switch (xPosition)
                     {
@@ -554,7 +554,7 @@ namespace WPF
             }
             else
             {
-                if (participant.Direction == Model.Direction.West)
+                if (direction == Model.Direction.West)
                 {
                     switch (xPosition)
                     {
@@ -588,7 +588,7 @@ namespace WPF
                             break;
                     }
                 }
-                else if (participant.Direction == Model.Direction.South)
+                else if (direction == Model.Direction.South)
                 {
                     switch (xPosition)
                     {
@@ -622,7 +622,7 @@ namespace WPF
                             break;
                     }
                 }
-                else if (participant.Direction == Model.Direction.East)
+                else if (direction == Model.Direction.East)
                 {
                     switch (xPosition)
                     {
@@ -656,7 +656,7 @@ namespace WPF
                             break;
                     }
                 }
-                else if (participant.Direction == Model.Direction.North)
+                else if (direction == Model.Direction.North)
                 {
                     switch (xPosition)
                     {
@@ -863,7 +863,7 @@ namespace WPF
 
         public static void DrawSectionOnBitmap(int x, int y, Direction direction, Graphics graphic, Section section)
         {
-            Bitmap sectionBitmap = WPFController.GetImage(WPFController.GetFilename(section.SectionType, direction), false, Direction.East);
+            Bitmap sectionBitmap = WPFController.GetImage(WPFController.GetSectionFilename(section.SectionType, direction), false, Direction.East);
 
             if (sectionBitmap == null)
             {

@@ -5017,11 +5017,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Daan\\OneDrive - Windesheim Office365\\Jaar 3\\C#\\Projects\\RaceSimulator\\WPF\\WPF.csproj",
+      "projectUniqueName": "C:\\Users\\Daan\\Downloads\\w\\RaceSimulator\\WPF\\WPF.csproj",
       "projectName": "WPF",
-      "projectPath": "C:\\Users\\Daan\\OneDrive - Windesheim Office365\\Jaar 3\\C#\\Projects\\RaceSimulator\\WPF\\WPF.csproj",
+      "projectPath": "C:\\Users\\Daan\\Downloads\\w\\RaceSimulator\\WPF\\WPF.csproj",
       "packagesPath": "C:\\Users\\Daan\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Daan\\OneDrive - Windesheim Office365\\Jaar 3\\C#\\Projects\\RaceSimulator\\WPF\\obj\\",
+      "outputPath": "C:\\Users\\Daan\\Downloads\\w\\RaceSimulator\\WPF\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\Daan\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -5038,14 +5038,14 @@
         "net6.0-windows7.0": {
           "targetAlias": "net6.0-windows",
           "projectReferences": {
-            "C:\\Users\\Daan\\OneDrive - Windesheim Office365\\Jaar 3\\C#\\Projects\\RaceSimulator\\Controller\\Controller.csproj": {
-              "projectPath": "C:\\Users\\Daan\\OneDrive - Windesheim Office365\\Jaar 3\\C#\\Projects\\RaceSimulator\\Controller\\Controller.csproj"
+            "C:\\Users\\Daan\\Downloads\\w\\RaceSimulator\\Controller\\Controller.csproj": {
+              "projectPath": "C:\\Users\\Daan\\Downloads\\w\\RaceSimulator\\Controller\\Controller.csproj"
             },
-            "C:\\Users\\Daan\\OneDrive - Windesheim Office365\\Jaar 3\\C#\\Projects\\RaceSimulator\\Model\\Model.csproj": {
-              "projectPath": "C:\\Users\\Daan\\OneDrive - Windesheim Office365\\Jaar 3\\C#\\Projects\\RaceSimulator\\Model\\Model.csproj"
+            "C:\\Users\\Daan\\Downloads\\w\\RaceSimulator\\Model\\Model.csproj": {
+              "projectPath": "C:\\Users\\Daan\\Downloads\\w\\RaceSimulator\\Model\\Model.csproj"
             },
-            "C:\\Users\\Daan\\OneDrive - Windesheim Office365\\Jaar 3\\C#\\Projects\\RaceSimulator\\RaceSim\\RaceSim.csproj": {
-              "projectPath": "C:\\Users\\Daan\\OneDrive - Windesheim Office365\\Jaar 3\\C#\\Projects\\RaceSimulator\\RaceSim\\RaceSim.csproj"
+            "C:\\Users\\Daan\\Downloads\\w\\RaceSimulator\\RaceSim\\RaceSim.csproj": {
+              "projectPath": "C:\\Users\\Daan\\Downloads\\w\\RaceSimulator\\RaceSim\\RaceSim.csproj"
             }
           }
         }

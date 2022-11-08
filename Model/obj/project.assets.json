@@ -4838,11 +4838,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Daan\\OneDrive - Windesheim Office365\\Jaar 3\\C#\\Projects\\RaceSimulator\\Model\\Model.csproj",
+      "projectUniqueName": "C:\\Users\\Daan\\Downloads\\w\\RaceSimulator\\Model\\Model.csproj",
       "projectName": "Model",
-      "projectPath": "C:\\Users\\Daan\\OneDrive - Windesheim Office365\\Jaar 3\\C#\\Projects\\RaceSimulator\\Model\\Model.csproj",
+      "projectPath": "C:\\Users\\Daan\\Downloads\\w\\RaceSimulator\\Model\\Model.csproj",
       "packagesPath": "C:\\Users\\Daan\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Daan\\OneDrive - Windesheim Office365\\Jaar 3\\C#\\Projects\\RaceSimulator\\Model\\obj\\",
+      "outputPath": "C:\\Users\\Daan\\Downloads\\w\\RaceSimulator\\Model\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\Daan\\AppData\\Roaming\\NuGet\\NuGet.Config",

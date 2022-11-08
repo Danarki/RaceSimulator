@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "AtzA4mAG/SFVYMNlN8PAJVEQr7oh162A6p0q7TnH6iN0qAZ8vvVVgRnLBFqQjT1PUIlvDZdcKxxS/kCYyBXWFg==",
+  "dgSpecHash": "ZIOjWgBeaaW6A3k0vKhqxQX7YrmjXNksXO1/64sex2SiQnMQlUJpKxGMIG9tMNiPKAE8GQg9yYv6peQzUL6CAg==",
   "success": true,
-  "projectFilePath": "C:\\Users\\Daan\\OneDrive - Windesheim Office365\\Jaar 3\\C#\\Projects\\RaceSimulator\\WPF\\WPF.csproj",
+  "projectFilePath": "C:\\Users\\Daan\\Downloads\\w\\RaceSimulator\\WPF\\WPF.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Daan\\.nuget\\packages\\microsoft.netcore.platforms\\1.1.0\\microsoft.netcore.platforms.1.1.0.nupkg.sha512",
     "C:\\Users\\Daan\\.nuget\\packages\\microsoft.netcore.targets\\1.1.0\\microsoft.netcore.targets.1.1.0.nupkg.sha512",
