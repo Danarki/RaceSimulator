@@ -5,12 +5,14 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:WPF"
         mc:Ignorable="d"
-        Title="MainWindow" Height="500" Width="850">
-    
+        Title="Race Scherm" Height="500" Width="850">
+
     <Window.DataContext>
         <local:DataContextClass/>
     </Window.DataContext>
     <Grid Background="LightGreen">
+        <Label x:Name="WinnerName" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" FontWeight="Bold" FontSize="42" FontStyle="Italic" Content="{Binding WinnerName}" Margin="10,10,15,10" RenderTransformOrigin="0.48,0.363"/>
+
         <Image Height="450" Width="800" Name="ImageComponent" />
         <DockPanel Dock="Top" Height="20" VerticalAlignment="Top" LastChildFill="False">
             <Menu>

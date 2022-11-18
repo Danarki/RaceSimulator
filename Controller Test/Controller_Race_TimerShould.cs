@@ -19,7 +19,7 @@ namespace Controller_Test
         [Test]
         public void Controller_Race_StartTimerShouldReturnNull()
         {
-            Data.CurrentRace.startTimer();
+            Data.CurrentRace.StartTimer();
             Race race = Data.CurrentRace;
 
             while (race != null)

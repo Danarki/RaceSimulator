@@ -9,9 +9,6 @@ using System.Threading.Tasks;
 using Controller;
 using Model;
 
-// TODO Methodes toevoegen voor versimpeling
-// TODO Methode DetermineLeftCornerCoordinates DetermineRightCornerCoordinates versimpelen
-
 namespace RaceSim
 {
     public static class Visualization
@@ -51,7 +48,7 @@ namespace RaceSim
         {
             DrawTrack(args.Track);
 
-            Data.CurrentRace.startTimer();
+            Data.CurrentRace.StartTimer();
         }
 
         public static string[] AddParticipantsToGraphic(string[] graphic, SectionData sectionData, SectionTypes sectionType, Section section)
@@ -105,7 +102,7 @@ namespace RaceSim
 
                             if (Data.CurrentRace._rounds[participant1].Item1 == Data.CurrentRace.maxRounds)
                             {
-                                Data.CurrentRace.removeDriverFromPositions(participant1, section, true);
+                                Data.CurrentRace.RemoveDriverFromPositions(participant1, section, true);
                             }
                         }
                     }
@@ -201,7 +198,7 @@ namespace RaceSim
 
                             if (Data.CurrentRace._rounds[participant2].Item1 == Data.CurrentRace.maxRounds)
                             {
-                                Data.CurrentRace.removeDriverFromPositions(participant2, section, false);
+                                Data.CurrentRace.RemoveDriverFromPositions(participant2, section, false);
                             }
                         }
                     }

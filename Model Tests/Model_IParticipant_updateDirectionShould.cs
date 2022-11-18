@@ -32,7 +32,7 @@ namespace Model_Tests
         [Test]
         public void UpdateDirection_EastLeft_ReturnNorth()
         {
-            participant.updateDirection(SectionTypes.LeftCorner);
+            participant.UpdateDirection(SectionTypes.LeftCorner);
 
             Assert.AreEqual(participant.Direction, Direction.North);
         }
@@ -40,7 +40,7 @@ namespace Model_Tests
         [Test]
         public void UpdateDirection_EastRight_ReturnSouth()
         {
-            participant.updateDirection(SectionTypes.RightCorner);
+            participant.UpdateDirection(SectionTypes.RightCorner);
 
             Assert.AreEqual(participant.Direction, Direction.South);
         }
@@ -49,7 +49,7 @@ namespace Model_Tests
         public void UpdateDirection_NorthRight_ReturnEast()
         {
             participant.Direction = Direction.North;
-            participant.updateDirection(SectionTypes.RightCorner);
+            participant.UpdateDirection(SectionTypes.RightCorner);
 
             Assert.AreEqual(participant.Direction, Direction.East);
         }
@@ -58,7 +58,7 @@ namespace Model_Tests
         public void UpdateDirection_NorthLeft_ReturnWest()
         {
             participant.Direction = Direction.North;
-            participant.updateDirection(SectionTypes.LeftCorner);
+            participant.UpdateDirection(SectionTypes.LeftCorner);
 
             Assert.AreEqual(participant.Direction, Direction.West);
         }
@@ -67,7 +67,7 @@ namespace Model_Tests
         public void UpdateDirection_WestRight_ReturnNorth()
         {
             participant.Direction = Direction.West;
-            participant.updateDirection(SectionTypes.RightCorner);
+            participant.UpdateDirection(SectionTypes.RightCorner);
 
             Assert.AreEqual(participant.Direction, Direction.North);
         }
@@ -76,7 +76,7 @@ namespace Model_Tests
         public void UpdateDirection_WestLeft_ReturnSouth()
         {
             participant.Direction = Direction.West;
-            participant.updateDirection(SectionTypes.LeftCorner); 
+            participant.UpdateDirection(SectionTypes.LeftCorner); 
 
             Assert.AreEqual(participant.Direction, Direction.South);
         }
@@ -85,7 +85,7 @@ namespace Model_Tests
         public void UpdateDirection_SouthRight_ReturnWest()
         {
             participant.Direction = Direction.South;
-            participant.updateDirection(SectionTypes.RightCorner);
+            participant.UpdateDirection(SectionTypes.RightCorner);
 
             Assert.AreEqual(participant.Direction, Direction.West);
         }
@@ -94,7 +94,7 @@ namespace Model_Tests
         public void UpdateDirection_SouthLeft_ReturnEast()
         {
             participant.Direction = Direction.South;
-            participant.updateDirection(SectionTypes.LeftCorner);
+            participant.UpdateDirection(SectionTypes.LeftCorner);
 
             Assert.AreEqual(participant.Direction, Direction.East);
         }
@@ -102,7 +102,7 @@ namespace Model_Tests
         [Test]
         public void GetSteps_ReturnInt()
         {
-            Assert.AreEqual(participant.getSteps(), 1);
+            Assert.AreEqual(participant.GetSteps(), 1);
         }
     }
 }

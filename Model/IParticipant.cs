@@ -18,19 +18,19 @@
         public TeamColors TeamColor { get; set; }
         public Direction Direction { get; set; }
 
-        public void updateDirection(SectionTypes sectionType)
+        public void UpdateDirection(SectionTypes sectionType)
         {
             if (sectionType == SectionTypes.RightCorner)
             {
-                nextDirection();
+                NextDirection();
             }
             else if (sectionType == SectionTypes.LeftCorner)
             {
-                previousDirection();
+                PreviousDirection();
             }
         }
 
-        public void nextDirection()
+        public void NextDirection()
         {
             if (Direction == Direction.West)
             {
@@ -42,7 +42,7 @@
             }
         }
 
-        public void previousDirection()
+        public void PreviousDirection()
         {
             if (Direction == Direction.North)
             {
@@ -54,7 +54,7 @@
             }
         }
 
-        public int getSteps()
+        public int GetSteps()
         {
             return Equipment.Performance * Equipment.Speed / 10;
         }

@@ -27,6 +27,9 @@
     &lt;TestId&gt;NUnit3x::EB7747B3-0C10-4FAB-B27C-A47DE426E7C2::net6.0::Controller_Test.Controller_Race_GetSectionDataShould.Controller_Race_NewRaceGetFaultySectionDataShouldReturnNull&lt;/TestId&gt;&#xD;
   &lt;/TestAncestor&gt;&#xD;
 &lt;/SessionState&gt;</s:String>
+	<s:String x:Key="/Default/Environment/UnitTesting/UnitTestSessionStore/Sessions/=42769ec5_002D93cb_002D4f7a_002D9af5_002Db1116c42d482/@EntryIndexedValue">&lt;SessionState ContinuousTestingMode="0" IsActive="True" Name="Controller_Race_RandomizeEquipmentShouldRandomizeEquipment" xmlns="urn:schemas-jetbrains-com:jetbrains-ut-session"&gt;&#xD;
+  &lt;Solution /&gt;&#xD;
+&lt;/SessionState&gt;</s:String>
 	<s:String x:Key="/Default/Environment/UnitTesting/UnitTestSessionStore/Sessions/=4c2ceba0_002D0525_002D4c81_002D9378_002D9c12ce21af09/@EntryIndexedValue">&lt;SessionState ContinuousTestingMode="0" Name="Visualization_OneParticipantToStraightWest_ReturnStringArray #4" xmlns="urn:schemas-jetbrains-com:jetbrains-ut-session"&gt;&#xD;
   &lt;TestAncestor&gt;&#xD;
     &lt;TestId&gt;NUnit3x::EB7747B3-0C10-4FAB-B27C-A47DE426E7C2::net6.0::Controller_Test.Visualization_AddParticipantsToGraphic_Should.Visualization_OneParticipantToStraightWest_ReturnStringArray&lt;/TestId&gt;&#xD;
@@ -52,6 +55,9 @@
   &lt;TestAncestor&gt;&#xD;
     &lt;TestId&gt;NUnit3x::72CDC3A6-4F2D-4EF0-9474-C5034603898E::net6.0-windows::Controller_Test.WPF_Visualization_GetParticipantLocation_Should.WPF_Visualization_DetermineParticipantLocation_ShouldReturnIntArrayCount&lt;/TestId&gt;&#xD;
   &lt;/TestAncestor&gt;&#xD;
+&lt;/SessionState&gt;</s:String>
+	<s:String x:Key="/Default/Environment/UnitTesting/UnitTestSessionStore/Sessions/=8ab62333_002Dd483_002D420f_002Daf67_002Dcde130b14c52/@EntryIndexedValue">&lt;SessionState ContinuousTestingMode="0" IsActive="True" Name="All tests from Solution" xmlns="urn:schemas-jetbrains-com:jetbrains-ut-session"&gt;&#xD;
+  &lt;Solution /&gt;&#xD;
 &lt;/SessionState&gt;</s:String>
 	<s:String x:Key="/Default/Environment/UnitTesting/UnitTestSessionStore/Sessions/=9de9e132_002D3dc2_002D4d2f_002D9e46_002Daa9c0232d99c/@EntryIndexedValue">&lt;SessionState ContinuousTestingMode="0" Name="Controller_Race_OnTimedEventShouldUpdateDrivers" xmlns="urn:schemas-jetbrains-com:jetbrains-ut-session"&gt;&#xD;
   &lt;TestAncestor&gt;&#xD;
@@ -82,7 +88,7 @@
     &lt;TestId&gt;NUnit3x::EB7747B3-0C10-4FAB-B27C-A47DE426E7C2::net6.0::Controller_Test.Visualization_AddParticipantsToGraphic_Should.Visualization_OneParticipantToStraightWest_ReturnStringArray&lt;/TestId&gt;&#xD;
   &lt;/TestAncestor&gt;&#xD;
 &lt;/SessionState&gt;</s:String>
-	<s:String x:Key="/Default/Environment/UnitTesting/UnitTestSessionStore/Sessions/=cb902262_002D377d_002D4ae6_002Dbb19_002D96329c85e29b/@EntryIndexedValue">&lt;SessionState ContinuousTestingMode="0" IsActive="True" Name="WPF_Visualization_DetermineParticipantLocation_StartShouldReturnIntArrayCount" xmlns="urn:schemas-jetbrains-com:jetbrains-ut-session"&gt;&#xD;
+	<s:String x:Key="/Default/Environment/UnitTesting/UnitTestSessionStore/Sessions/=cb902262_002D377d_002D4ae6_002Dbb19_002D96329c85e29b/@EntryIndexedValue">&lt;SessionState ContinuousTestingMode="0" Name="WPF_Visualization_DetermineParticipantLocation_StartShouldReturnIntArrayCount" xmlns="urn:schemas-jetbrains-com:jetbrains-ut-session"&gt;&#xD;
   &lt;Solution /&gt;&#xD;
 &lt;/SessionState&gt;</s:String>
 	<s:String x:Key="/Default/Environment/UnitTesting/UnitTestSessionStore/Sessions/=cc06dd3d_002D8ff3_002D491b_002Db5fa_002Df4c823a01040/@EntryIndexedValue">&lt;SessionState ContinuousTestingMode="0" Name="Visualization_GraphicFacingEastRight_ReturnStringArray" xmlns="urn:schemas-jetbrains-com:jetbrains-ut-session"&gt;&#xD;

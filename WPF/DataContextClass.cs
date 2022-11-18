@@ -17,7 +17,8 @@ namespace WPF
         public event PropertyChangedEventHandler PropertyChanged;
 
         private string name;
-        public string TrackName {
+        public string TrackName
+        {
             get
             {
                 return name;
@@ -29,7 +30,22 @@ namespace WPF
             }
 
         }
-      
+
+        private string winnerName;
+        public string WinnerName
+        {
+            get
+            {
+                return winnerName;
+            }
+            set
+            {
+                winnerName = value;
+                OnPropertyChanged();
+            }
+
+        }
+
         public DataContextClass(){}
 
         public DataContextClass(string name)

@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Linq;
+using System.Runtime.Serialization;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows;
@@ -24,8 +25,8 @@ namespace WPF
     /// </summary>
     public partial class MainWindow : Window
     {
-        private CompetitionWindow _competitionWindow;
-        private RaceWindow _raceWindow;
+        public CompetitionWindow _competitionWindow;
+        public RaceWindow _raceWindow;
 
         public DataContextClass DataContextClass;
 
@@ -45,7 +46,7 @@ namespace WPF
 
             Data.CurrentRace.DriversChanged += OnDriversChanged;
             Data.CurrentRace.RaceChanged += OnRaceChanged;
-            Data.CurrentRace.RaceEnded += OnRaceChanged;
+            Data.CurrentRace.RaceEnded += OnRaceEnded;
         }
 
         private void OnDriversChanged(DriversChangedEventArgs e)
@@ -58,63 +59,66 @@ namespace WPF
                     this.ImageComponent.Source = Visualization.DrawTrack(e.Track);
                 }));
 
-            Data.CurrentRace.startTimer();
+            Data.CurrentRace.StartTimer();
         }
 
         private void OnRaceEnded()
         {
             Data.CurrentRace = null;
             WPFController.ClearCache();
-            this.ImageComponent.Dispatcher.BeginInvoke(
-                DispatcherPriority.Render,
-                new Action(() =>
-                {
-                    this.ImageComponent.Source = null;
-                    this.ImageComponent.Source = Visualization.EndRace();
-                }));
+            DataContextClass.TrackName = "";
+
+            IParticipant winner = Data.Competition.Participants.MaxBy(x => x.Points);
+
+            DataContextClass.WinnerName = "Winnaar: " + winner.Name + " met " + winner.Points + " punten!";
         }
 
         private void OnRaceChanged()
         {
-            DataContextClass.TrackName = Data.CurrentRace.Track.Name;
-
-            WPFController.ClearCache();
-            WPFController.Initialize();
-            
-            Track track = Data.CurrentRace.Track;
-            
-            Data.CurrentRace.DriversChanged += OnDriversChanged;
-            Data.CurrentRace.RaceChanged += OnRaceChanged;
-            Data.CurrentRace.RaceEnded += OnRaceEnded;
-            
-            if (track != null)
+            if (Data.CurrentRace != null)
             {
-                this.ImageComponent.Dispatcher.BeginInvoke(
-                    DispatcherPriority.Render,
-                    new Action(() =>
+                DataContextClass.TrackName = Data.CurrentRace.Track.Name;
+
+                WPFController.ClearCache();
+                WPFController.Initialize();
+
+                Track track = Data.CurrentRace.Track;
+
+                Data.CurrentRace.DriversChanged += OnDriversChanged;
+                Data.CurrentRace.RaceChanged += OnRaceChanged;
+                Data.CurrentRace.RaceEnded += OnRaceEnded;
+
+                if (track != null)
+                {
+                    this.ImageComponent.Dispatcher.BeginInvoke(
+                        DispatcherPriority.Render,
+                        new Action(() =>
+                        {
+                            this.ImageComponent.Source = null;
+                            this.ImageComponent.Source = Visualization.DrawTrack(track);
+                        }));
+                }
+
+                if (_raceWindow != null)
+                {
+                    this.Dispatcher.Invoke(() =>
                     {
-                        this.ImageComponent.Source = null;
-                        this.ImageComponent.Source = Visualization.DrawTrack(track);
-                    }));
-            }
+                        Data.CurrentRace.DriversChanged +=
+                            ((RaceContextClass)_raceWindow.DataContext).OnDriversChanged;
+                    });
+                }
 
-            if (_raceWindow != null)
-            {
-                this.Dispatcher.Invoke(() =>
+                if (_competitionWindow != null)
                 {
-                    Data.CurrentRace.DriversChanged += ((RaceContextClass)_raceWindow.DataContext).OnDriversChanged;
-                });
-            }
+                    this.Dispatcher.Invoke(() =>
+                    {
+                        Data.CurrentRace.DriversChanged += ((CompetitionContextClass)_competitionWindow.DataContext)
+                            .OnDriversChanged;
+                    });
+                }
 
-            if (_competitionWindow != null)
-            {
-                this.Dispatcher.Invoke(() =>
-                {
-                    Data.CurrentRace.DriversChanged += ((CompetitionContextClass)_competitionWindow.DataContext).OnDriversChanged;
-                });
+                Data.CurrentRace.StartTimer();
             }
-
-            Data.CurrentRace.startTimer();
         }
 
         private void MenuItem_Exit_Click(object sender, RoutedEventArgs e)

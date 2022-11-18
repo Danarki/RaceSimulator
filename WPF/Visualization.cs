@@ -15,9 +15,9 @@ namespace WPF
     {
         private static int blockWidthAndHeigth = 46;
 
-        public static BitmapSource EndRace()
+        public static void EndRace()
         {
-            return WPFController.CreateBitmapSourceFromGdiBitmap(null);
+            WPFController.ClearCache();
         }
 
         public static List<int> GetParticipantLocation(int dis, Section section, Direction direction, bool isLeft, ref bool increaseRounds, ref bool giveRoundsTuple)
@@ -752,7 +752,7 @@ namespace WPF
 
                     if (removeDriver)
                     {
-                        Data.CurrentRace.removeDriverFromPositions(leftParticipant, section, true);
+                        Data.CurrentRace.RemoveDriverFromPositions(leftParticipant, section, true);
                     }
                 }
 
@@ -797,7 +797,7 @@ namespace WPF
 
                     if (removeDriver)
                     {
-                        Data.CurrentRace.removeDriverFromPositions(rightParticipant, section, false);
+                        Data.CurrentRace.RemoveDriverFromPositions(rightParticipant, section, false);
                     }
                 }
                 int xParticipant = list[0] + x;

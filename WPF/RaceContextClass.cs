@@ -56,7 +56,6 @@ namespace WPF
                     from participant in participants
                     where participant.Equipment.IsBroken
                     select participant;
-                // TODO Add more data binding fields
 
                 if (Data.CurrentRace.StartTime != null)
                 {

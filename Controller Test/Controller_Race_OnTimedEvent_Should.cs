@@ -126,9 +126,9 @@ namespace Controller_Test
 
             Data.CurrentRace = race;
 
-            race.startTimer();
+            race.StartTimer();
             Thread.Sleep(500);
-            race.stopTimer();
+            race.StopTimer();
 
             Section section = race.Track.Sections.First();
             SectionData sectionData = race.GetSectionData(section);

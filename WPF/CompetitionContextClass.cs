@@ -44,9 +44,9 @@ namespace WPF
 
                 TrackList = Data.Competition.Tracks.ToList();
 
-                if (TrackList.Count > 1)
+                if (TrackList.Count > 0)
                 {
-                    nextTrackName = TrackList[1].Name;
+                    nextTrackName = TrackList[0].Name;
                 }
                 else
                 {
